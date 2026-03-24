@@ -6,15 +6,16 @@ description = "WAILS 2025 Organizing Committee"
 ## General Chairs
 
 {{< organizers >}}
-{{< organizer name="Gianni Fenu" image="fenu.jpg" affiliation="University of Cagliari" country="Italy" email="fenu [at] unica.it">}}
+{{< organizer name="Vanda Luengo" image="fenu.jpg" affiliation="Sorbonne Université - LIP6" country="France" email="vanda.luengo [at] lip6.fr">}}
 {{< organizer name="Antonello Mura" image="mura.jpg" affiliation="University of Cagliari" country="Italy" email="amura [at] unica.it">}}
 {{< /organizers >}}
 
 ## Program Chairs
 
 {{< organizers >}}
-{{< organizer name="Carla Limongelli" image="limongelli.png" affiliation="Roma Tre University" country="Italy" email="carla.limongelli [at] uniroma3.it">}}
-{{< organizer name="Mirko Marras" image="marras.jpeg" affiliation="University of Cagliari" country="Italy" email="mirko.marras [at] unica.it">}}
+{{< organizer name="Angelica Lo Duca" image="limongelli.png" affiliation="Roma Tre University" country="Italy" email="carla.limongelli [at] uniroma3.it">}}
+{{< organizer name="Francesca Maridina Malloci" image="marras.jpeg" affiliation="University of Cagliari" country="Italy" email="mirko.marras [at] unica.it">}}
+{{< organizer name="Daniela Rotelli" image="rotelli.jpg" affiliation="Sorbonne Université - LIP6" country="France" email="daniela.rotelli [at] lip6.fr">}}
 {{< /organizers >}}
 
 ## Doctoral Symposium Chairs
@@ -48,7 +49,7 @@ description = "WAILS 2025 Organizing Committee"
 ## Web Chair
 
 {{< organizers >}}
-{{< organizer name="Francesca M. Malloci" image="malloci.jpeg" affiliation="University of Cagliari" country="Italy" email="francescam.malloci [at] unica.it">}}
+{{< organizer name="Marco Tocco" image="malloci.jpeg" affiliation="University of Cagliari" country="Italy" email="marco.tocco [at] unica.it">}}
 {{< /organizers >}}
 
 ## Local Organization Chairs
