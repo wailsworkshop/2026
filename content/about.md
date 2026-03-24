@@ -20,7 +20,7 @@ The **3rd Workshop on Artificial Intelligence with and for Learning Sciences: Pa
 
 # Organizing Institution
 
-![LIP6 Logo](/2026/img/organizers/LIP6_logo.png)
+![LIP6 Logo](/2026/img/organizers/LIP6_logo.jpg)
 
 # Supporters
 
