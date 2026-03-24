@@ -1,0 +1,222 @@
+baseURL = "http://localhost:1313/2025"
+title = "WAILS"
+author = "WAILS Committee"
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+enableRobotsTXT = true
+
+# Disqus Comment System
+#disqusShortname = ""
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+  # Parameter specifically for GitHub Pages deployment
+  isGitHubPages = true
+  
+  showBlog = false
+  mainSections = ['news']
+
+  googleFonts = true
+
+  [params.logo]
+    main = "img/logo/logo.png"
+    alt = "WAILS 2025 Logo"
+
+    # The size parameter is the class name of tailwindcss
+    # https://tailwindcss.com/
+    size = "h-15"
+
+  [params.site]
+    name = "WAILS 2025"
+
+  [params.icon]
+    #If you want to use FontAwesome, set this parameter to true.
+    fontawesome = true
+
+  [params.homepage_meta_tags]
+    meta_description = "The 2nd Workshop on Artificial Intelligence with and for Learning Sciences: Past, Present, and Future Horizons - December 10-12, 2025, Cagliari, Italy"
+    meta_og_title = "WAILS 2025"
+    meta_og_type = "website"
+    meta_og_url = "https://wailsworkshop.github.io/2025"
+    meta_og_description = "The 2nd Workshop on Artificial Intelligence with and for Learning Sciences: Past, Present, and Future Horizons - December 10-12, 2025, Cagliari, Italy"
+    meta_twitter_card = "summary_large_image"
+    meta_twitter_site = "@wailsworkshop"
+    meta_twitter_creator = "@wailsworkshop"
+
+[menu]
+
+  # Main Navigation Menu
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "dates"
+    name = "Important Dates"
+    url = "/important-dates/"
+    weight = 2
+  
+  [[menu.main]]
+    name = "Calls"
+    url = "#"
+    weight = 3
+
+    [[menu.main]]
+      parent = "Calls"
+      name = "Call for Full and Short Papers"
+      url = "/call-full-short-papers/"
+      weight = 1
+
+    [[menu.main]]
+      parent = "Calls"
+      name = "Call for Doctoral Symposium Papers"
+      url = "/call-doctoral-symposium-papers/"
+      weight = 2
+
+  [[menu.main]]
+    name = "Program"
+    url = "#"
+    weight = 4
+
+    [[menu.main]]
+      parent = "Program"
+      name = "Program Overview"
+      url = "/program-overview/"
+      weight = 1
+
+    [[menu.main]]
+      parent = "Program"
+      name = "Detailed Program"
+      url = "/detailed-program/"
+      weight = 2
+
+    [[menu.main]]
+      parent = "Program"
+      name = "Accepted Papers"
+      url = "/accepted-papers/"
+      weight = 3
+
+    [[menu.main]]
+      parent = "Program"
+      name = "Keynote Speakers"
+      url = "/keynote-speakers/"
+      weight = 4
+
+    [[menu.main]]
+      parent = "Program"
+      name = "Social Events"
+      url = "/social-events/"
+      weight = 5
+
+  [[menu.main]]
+    name = "Committees"
+    url = "#"
+    weight = 5
+
+    [[menu.main]]
+      parent = "Committees"
+      name = "Organizing Committee"
+      url = "/organizing-committee/"
+      weight = 1
+
+    [[menu.main]]
+      parent = "Committees"
+      name = "Program Committee"
+      url = "/program-committee/"
+      weight = 2
+
+  [[menu.main]]
+    name = "Attend"
+    url = "/attend/"
+    weight = 6
+
+    [[menu.main]]
+      parent = "Attend"
+      name = "Registration"
+      url = "/registration/"
+      weight = 1
+
+    [[menu.main]]
+      parent = "Attend"
+      name = "Travel Information"
+      url = "/travel-information/"
+      weight = 2
+
+    [[menu.main]]
+      parent = "Attend"
+      name = "Venue Information"
+      url = "/venue-information/"
+      weight = 3
+
+    [[menu.main]]
+      parent = "Attend"
+      name = "Touristic Information"
+      url = "/touristic-information/"
+      weight = 4
+
+    [[menu.main]]
+      parent = "Attend"
+      name = "Accommodation Information"
+      url = "/accommodation-information/"
+      weight = 5
+
+    [[menu.main]]
+      parent = "Attend"
+      name = "Visa Information"
+      url = "/visa-information/"
+      weight = 6
+
+  [[menu.main]]
+    name = "Policies"
+    url = "#"
+    weight = 7
+
+    [[menu.main]]
+      parent = "Policies"
+      name = "ACM Policy on Authorship"
+      url = "https://www.acm.org/publications/policies/new-acm-policy-on-authorship"
+      weight = 1
+
+    [[menu.main]]
+      parent = "Policies"
+      name = "ACM Policy on the Use of Artificial Intelligence"
+      url = "https://www.acm.org/publications/policies/frequently-asked-questions#h-can-i-use-generative-ai-software-tools-to-prepare-my-manuscript?"
+      weight = 2
+
+    [[menu.main]]
+      parent = "Policies"
+      name = "ACM Policy on Plagiarism, Misrepresentation, and Falsification"
+      url = "https://www.acm.org/publications/policies/plagiarism-overview"
+      weight = 3
+
+    [[menu.main]]
+      parent = "Policies"
+      name = "ACM Inappropriate Content Policy"
+      url = "https://www.acm.org/publications/policies/inappropriate-content-policy"
+      weight = 4
+
+    [[menu.main]]
+      parent = "Policies"
+      name = "ACM Policy Against Harassment"
+      url = "https://www.acm.org/about-acm/policy-against-harassment"
+      weight = 5
+
+  [[menu.main]]
+    name = "History"
+    url = "#"
+    weight = 8
+
+    [[menu.main]]
+      parent = "History"
+      name = "WAILS 2024 (Salerno, Italy)"
+      url = "https://wailsworkshop.github.io/2024/"
+      weight = 1
+
+  [[menu.main]]
+    name = "Contacts"
+    url = "/contacts/"
+    weight = 9

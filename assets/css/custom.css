@@ -1,0 +1,767 @@
+/* This file will override the theme's default styles and be included after processing Tailwind CSS */
+
+/* Custom styles to match UMAP 2024 styling */
+
+/* Base font and colors */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f7f1; /* Cream background color to match UMAP 2024 */
+  color: #333;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+  margin: 0 auto;
+  height: auto; /* Allow header to adjust to content height */
+}
+
+/* Make sure the logo and navigation are aligned */
+header .flex {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+/* Strip spacers */
+.strip-spacer {
+  padding: 4rem 0;
+  background-color: #fff8f0;
+  margin: 2rem 0 !important; /* Force margin for spacers */
+  display: block !important; /* Ensure the spacer is displayed */
+}
+
+/* Navigation menu improvements */
+nav {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  padding: 0.75rem 1rem !important;
+  height: auto;
+  position: relative;
+}
+
+/* Mobile menu toggle button styling */
+.block.lg\:hidden {
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Desktop vs Mobile Navigation Logic */
+@media (min-width: 1024px) {
+  /* Desktop view */
+  #mobileMenu {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+  }
+  
+  #mobileMenu .text-lg {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  
+  /* Ensure menu items are displayed horizontally */
+  #mobileMenu a {
+    display: inline-block !important;
+    margin-top: 0 !important;
+  }
+  
+  .block.lg\:hidden {
+    display: none !important; /* Hide hamburger on desktop */
+  }
+}
+
+@media (max-width: 1023px) {
+  /* Mobile view */
+  #mobileMenu {
+    display: none !important; /* Hide menu by default on mobile */
+    flex-direction: column !important;
+    position: absolute;
+    top: 100%; /* Position directly below the header */
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 50;
+    padding: 0.5rem;
+    width: 100%;
+    border-top: 1px solid #f0f0f0;
+  }
+  
+  /* When mobile menu is open */
+  #mobileMenu.open {
+    display: block !important;
+  }
+  
+  #mobileMenu a {
+    display: block !important;
+    margin-top: 0.5rem !important;
+    padding: 0.5rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  #mobileMenu a:last-child {
+    border-bottom: none;
+  }
+  
+  .block.lg\:hidden {
+    display: block !important; /* Show hamburger on mobile */
+  }
+
+  header {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
+
+/* Navigation menu items */
+#mobileMenu a {
+  font-weight: 500;
+  margin-left: 1.5rem;
+  margin-right: 0;
+  white-space: nowrap;
+}
+
+/* Make sure the last menu items fit */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  #mobileMenu a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Content container - centered and boxed at 75% width */
+.content-container {
+  width: 75%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+/* Main content area */
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Applies the content container to all main content but excludes slider and footer */
+main > div:not(.swiper-container):not(footer), 
+#content > div:not(.swiper-container):not(footer),
+.mx-auto:not(footer .mx-auto) {
+  width: 75% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1200px !important;
+}
+
+/* Center page titles on all pages */
+.title, h1.title {
+  text-align: center !important;
+}
+
+/* Remove any padding/margin from main containers */
+main, #content, body > div {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Ensure consistent background color for homepage and all other pages */
+body, body.homepage, .strip-spacer, main, #content {
+  background-color: #fff8f0;
+}
+
+/* Slider adjustments */
+.swiper-container {
+  height: 70vh; /* Increased from 60vh to 75vh for a taller slider */
+  width: 100% !important; /* Full width */
+  margin: 0 !important; /* Remove margins */
+  padding: 0 !important;
+  overflow: hidden;
+  position: relative; /* For positioning the fixed title */
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* Show center of images */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important; /* Hide navigation arrows as requested */
+}
+
+/* Fixed title at the top of slider - now vertically centered */
+.slider-title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%); /* Vertically center the title */
+  background-color: rgba(0, 87, 149, 0.85); /* UMAP style blue background with transparency */
+  padding: 1rem 0;
+  text-align: center;
+  z-index: 10; /* Ensure it's above the slides */
+}
+
+.slider-title h1 {
+  color: white !important;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 2.5rem; /* Larger title */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 90%;
+}
+
+.slider-title p {
+  color: white !important;
+  margin: 0.5rem auto 0;
+  font-size: 1.5rem; /* Larger subtitle */
+  text-align: center;
+  width: 90%;
+}
+
+/* Hide the per-slide titles since we now have a fixed one */
+.s-fade-txt {
+  display: none;
+}
+
+/* Adding spacers before and after strip content on homepage */
+.homepage .swiper-container + .strip-spacer {
+  margin-top: 2rem !important;
+  display: block !important;
+}
+
+.shadow-white {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.25rem; /* Add border-radius for consistent rounded corners */
+  padding: 1rem; /* Add default padding */
+}
+
+.shadow-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this new class for dual shadows (top and bottom) */
+.shadow-dual {
+  box-shadow:
+    0 0px 6px rgba(0, 0, 0, 0.05),  /* Top shadow */
+    0 4px 6px rgba(0, 0, 0, 0.05);   /* Bottom shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.shadow-dual:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 -8px 15px rgba(0, 0, 0, 0.1),  /* Enhanced top shadow on hover */
+    0 10px 15px rgba(0, 0, 0, 0.1);  /* Enhanced bottom shadow on hover */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #005795;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2.h2-no-margin-top {
+  margin-top: 0;
+}
+
+/* Content pages */
+.content {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Call for Papers content spacing fix */
+.content.prose {
+  line-height: 1.6;
+}
+
+.content.prose ul, 
+.content.prose ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.content.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.content.prose p {
+  margin: 1rem 0;
+}
+
+.content.prose h1, 
+.content.prose h2, 
+.content.prose h3, 
+.content.prose h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+/* Additional spacing for lists in content */
+.content ul li ul,
+.content ol li ol,
+.content ol li ul,
+.content ul li ol {
+  margin: 0.5rem 0;
+  list-style-type: circle;
+}
+
+.content ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+.content ol {
+  list-style-type: decimal;
+  padding-left: 2rem;
+}
+
+/* Ensure nested lists display properly */
+.content ul li,
+.content ol li {
+  display: list-item;
+}
+
+/* Footer styling - more compact */
+footer {
+  padding: 0 !important; /* No padding */
+  margin: 0 !important;
+  width: 100% !important;
+  background-color: #005795 !important;
+}
+
+footer a {
+  color: white !important;
+}
+
+footer .first-layer-footer {
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Hide footer navigation menu */
+footer .flex-row.items-center.text-lg,
+footer .flex-row.items-center.text-sm {
+  display: none !important;
+}
+
+footer .copy {
+  width: 100% !important;
+  padding: 0.35rem 0 !important;
+  text-align: center !important;
+  font-size: 0.85rem;
+}
+
+/* Fix social icons class */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  margin: 0 0.25rem;
+}
+
+.social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+/* Ensure Font Awesome icons display correctly */
+.social-icons i, 
+.social-icons .fab, 
+.social-icons .fa-brands {
+  font-size: 1rem;
+  line-height: 1;
+  color: white;
+}
+
+/* Navigation menu */
+.nav-link {
+  font-weight: 500;
+  color: #005795 !important;
+}
+
+.nav-link:hover {
+  color: #1a365d !important;
+}
+
+/* Links */
+a {
+  color: #005795;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table th, table td {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+}
+
+table th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Back to top button - consistent styling across all pages */
+.scroll-top {
+  background-color: rgba(0, 87, 149, 0.79) !important; /* Match the site's blue color theme */
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  width: 40px !important; /* Fixed width instead of variable */
+  height: 40px !important; /* Fixed height instead of variable */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column;
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 4px !important; /* Force border radius to be consistent */
+  transition: opacity 0.3s ease;
+  padding: 0 !important;
+}
+
+.scroll-top:hover {
+  opacity: 0.8;
+}
+
+/* Updated selector to work with both icon fonts */
+.scroll-top .icon-keyboard_arrow_up, 
+.scroll-top span.icon-keyboard_arrow_up,
+.scroll-top .material-icons {
+  font-size: 1.25rem !important; /* Consistent icon size */
+  line-height: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: white !important; /* Ensure the arrow is white */
+}
+
+/* Ensure proper scroll-top positioning on all pages */
+body:not(.homepage) .scroll-top {
+  position: fixed !important; /* Force fixed positioning */
+}
+
+/* Responsive back-to-top button */
+@media (max-width: 992px) {
+  .scroll-top {
+    width: 40px !important; /* Keep fixed size for consistency */
+    height: 40px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-top {
+    width: 40px !important; /* Keep fixed size for consistency */
+    height: 40px !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  main > div:not(.swiper-container):not(footer), 
+  #content > div:not(.swiper-container):not(footer),
+  .mx-auto:not(footer .mx-auto) {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-container {
+    height: 50vh;
+  }
+  
+  .slider-title h1 {
+    font-size: 1.75rem;
+  }
+  
+  .slider-title p {
+    font-size: 1.25rem;
+  }
+  
+  main > div:not(.swiper-container):not(footer), 
+  #content > div:not(.swiper-container):not(footer),
+  .mx-auto:not(footer .mx-auto) {
+    width: 95% !important;
+  }
+}
+
+/* Organizers page styling */
+.organizers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.organizer-card {
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.organizer-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  border: 3px solid #f1f5f9;
+}
+
+.organizer-card h3 {
+  margin: 0.5rem 0;
+  color: #005795;
+}
+
+.organizer-card p {
+  margin: 0.25rem 0;
+  color: #4a5568;
+}
+
+.organizer-card p.affiliation {
+  color: #005795;
+}
+
+.organizer-card a {
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.organizer-card a:hover {
+  text-decoration: underline;
+}
+
+/* Make organizers grid responsive */
+@media (max-width: 768px) {
+  .organizers-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .organizer-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .organizers-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Text and image side-by-side layout */
+.text-image-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.text-image-content {
+  flex: 1.5;
+}
+
+.text-image-figure {
+  flex: 1;
+}
+
+.text-image-figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+  .text-image-container {
+    flex-direction: column;
+  }
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+}
+
+.about-content p > img {
+    width: 25%;
+}
+
+.about-content ul {
+    margin-bottom: 1rem;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  font-size: 1rem;
+  margin-left: 0.25rem;
+  transition: transform 0.2s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  overflow: hidden;
+  max-height: 80vh; /* Set maximum height */
+  overflow-y: auto; /* Add scrolling for many items */
+  margin-top: 10px !important;
+  display: none; /* Hidden by default */
+}
+
+/* Show dropdown when hidden class is removed by JavaScript */
+.dropdown-menu:not(.hidden) {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #005795 !important; /* Ensure consistent link color with main menu */
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+  margin: 0 !important;
+  white-space: nowrap;
+  width: 100% !important; /* Ensure full width */
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+  text-decoration: none;
+  color: #1a365d !important; /* Match hover color of main menu links */
+}
+
+/* Mobile dropdown styling */
+@media (max-width: 1023px) {
+  .dropdown {
+    width: 100%;
+  }
+  
+  .dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-left: 2px solid #f0f0f0;
+    margin-left: 1rem;
+    border-radius: 0;
+    margin-top: 0 !important;
+  }
+  
+  .dropdown-menu a {
+    padding-left: 1.5rem;
+  }
+}
+
+/* Desktop hover behavior - Only apply on larger screens */
+@media (min-width: 1024px) {
+  /* Create a hover area that bridges the gap between menu and dropdown */
+  .dropdown::after {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+  }
+
+  /* Desktop: show dropdown on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}

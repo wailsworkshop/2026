@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ or .Site.Language.Lang "ja" }}">
+
+<head>
+  {{- partial "head.html" . -}}
+  {{ block "meta_tags" . }}{{end}}
+</head>
+
+<body class="flex flex-col min-h-screen">
+  <div class="scroll-top rounded-full">
+    <span class="material-icons">keyboard_arrow_up</span>
+  </div>
+  <main class="flex-grow">
+    {{- partial "header.html" . -}}
+    {{- block "main" . }}{{- end }}
+  </main>
+  {{- partial "footer.html" . -}}
+</body>
+
+</html>

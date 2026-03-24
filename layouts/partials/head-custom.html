@@ -1,0 +1,19 @@
+<!-- Load custom CSS after Tailwind and make sure important Tailwind classes aren't overridden -->
+{{ $customCSS := resources.Get "css/custom.css" | minify }}
+<link rel="stylesheet" href="{{ $customCSS.RelPermalink }}">
+
+<!-- Load custom JavaScript for menu functionality -->
+{{ $menuJS := resources.Get "js/menu.js" | minify }}
+<script src="{{ $menuJS.RelPermalink }}"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Back to top button functionality
+    const scrollTopButton = document.querySelector('.scroll-top');
+    if (scrollTopButton) {
+      scrollTopButton.addEventListener('click', () => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      });
+    }
+  });
+</script>

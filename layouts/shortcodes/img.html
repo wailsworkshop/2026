@@ -1,0 +1,9 @@
+{{- $imagePath := .Get "src" -}}
+{{- if and $.Site.Params.isGitHubPages (hasPrefix $imagePath "/img/") -}}
+  {{- $basePath := urls.Parse $.Site.BaseURL -}}
+  {{- $pathOnly := $basePath.Path -}}
+  {{- if ne $pathOnly "/" -}}
+    {{- $imagePath = printf "%s%s" $pathOnly $imagePath -}}
+  {{- end -}}
+{{- end -}}
+<img src="{{ $imagePath }}" alt="{{ .Get "alt" }}" {{ with .Get "width" }}width="{{ . }}"{{ end }} {{ with .Get "height" }}height="{{ . }}"{{ end }} {{ with .Get "class" }}class="{{ . }}"{{ end }}>
