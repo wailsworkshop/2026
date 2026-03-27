@@ -19,6 +19,24 @@
     <li><a href="#cfp">Call for Papers</a></li>
     <li><a href="#keynotes">Keynotes</a></li>
     <li><a href="#committee">Committee</a></li>
+    <li class="has-dropdown">
+      <a href="#">Attend</a>
+      <div class="dropdown">
+          <div class="dropdown-inner">
+            <a href="attend-registration.html">Registration</a>
+            <a href="attend-travel.html">Travel Information</a>
+          </div>
+      </div>
+    </li>
+    <li class="has-dropdown">
+      <a href="#">Schedule</a>
+      <div class="dropdown">
+          <div class="dropdown-inner">
+        <a href="schedule-programme.html">Programme</a>
+        <a href="schedule-accepted-papers.html">Accepted Papers</a>
+          </div>
+      </div>
+    </li>
     <li><a href="#cfp" class="nav-cta">Submit</a></li>
   </ul>
 </nav>
@@ -336,9 +354,39 @@
   <div class="f-links">
     <a href="https://wailsworkshop.github.io/2025/" target="_blank">WAILS 2025 &nearr;</a>
     <a href="https://wailsworkshop.github.io/2024/" target="_blank">WAILS 2024 &nearr;</a>
-    <a href="/cdn-cgi/l/email-protection#c6b1a7afaab5b1a9b4adb5aea9b686a9b3b2aaa9a9ade8a5a9ab">Contact</a>
+    <a href="mailto:wailsworkshop@outlook.com">Contact</a>
   </div>
 </footer>
 
 <script src="./js/countdown.js"></script>
 <script src="./js/slider.js"></script>
+<script>
+(function() {
+  var t = new Date(2026, 11, 9, 9, 0, 0);
+  function tick() {
+    var diff = t - new Date();
+    if (diff < 0) diff = 0;
+    var el = document.getElementById.bind(document);
+    if (el("cd-d")) el("cd-d").textContent = String(Math.floor(diff/86400000)).padStart(3,"0");
+    if (el("cd-h")) el("cd-h").textContent = String(Math.floor(diff%86400000/3600000)).padStart(2,"0");
+    if (el("cd-m")) el("cd-m").textContent = String(Math.floor(diff%3600000/60000)).padStart(2,"0");
+    if (el("cd-s")) el("cd-s").textContent = String(Math.floor(diff%60000/1000)).padStart(2,"0");
+  }
+  tick(); setInterval(tick, 1000);
+  var slides = document.querySelectorAll('.hero-slider img');
+  var caption = document.getElementById('slider-caption');
+  if (slides.length) {
+    var cur = 0;
+    slides[0].classList.add('active');
+    if (caption) caption.textContent = slides[0].getAttribute('data-credit') || '';
+    setInterval(function() {
+      slides[cur].classList.remove('active');
+      cur = (cur + 1) % slides.length;
+      slides[cur].classList.add('active');
+      if (caption) caption.textContent = slides[cur].getAttribute('data-credit') || '';
+    }, 4500);
+  }
+})();
+</script>
+</body>
+</html>

@@ -21,7 +21,8 @@
   }
   .nav-logo { font-family: "Playfair Display", serif; font-size: 1.35rem; font-weight: 900; text-decoration: none; color: var(--ink); }
   .nav-logo span { color: var(--accent); }
-  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
+  .nav-links > li { position: relative; }
   .nav-links a { text-decoration: none; color: var(--muted); font-size: 0.82rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
   .nav-links a:hover { color: var(--ink); }
   .nav-cta { background: var(--accent) !important; color: white !important; padding: 0.5rem 1.2rem; border-radius: 2px; }
@@ -149,15 +150,66 @@
   /* Enlarged committee member photos */
   .cp img { width:70px !important; height:70px !important; border-radius:50%; object-fit:cover; flex-shrink:0; }
 
-
-
-/* SLIDER */
+/* ── SLIDER ── */
 .hero-slider { position:absolute; inset:0; z-index:0; }
 .hero-slider img {
-    position:absolute; inset:0;
-    width:100%; height:100%;
-    object-fit:cover;
-    opacity:0;
-    transition: opacity 1.5s ease-in-out;
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition: opacity 1.8s ease-in-out;
 }
-.hero-slider img.active { opacity:0.35; }
+.hero-slider img.active { opacity:0.38; }
+.slider-credit {
+  position:absolute; bottom:1rem; right:1.5rem; z-index:2;
+  font-size:0.65rem; color:rgba(255,255,255,0.3);
+  font-family:"DM Sans", sans-serif; letter-spacing:0.04em;
+  pointer-events:none;
+}
+
+/* ── DROPDOWNS ── */
+.has-dropdown > a::after { content: " ▾"; font-size: 0.55rem; opacity: 0.5; vertical-align: middle; }
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 0.8rem;
+    background: transparent;
+    z-index: 999;
+    min-width: 190px;
+}
+.dropdown::before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 10px; height: 10px;
+    background: white;
+    border-left: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+}
+.dropdown-inner {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.has-dropdown:hover > .dropdown { display: block; }
+.dropdown a {
+  display: block !important;
+  padding: 0.7rem 1.2rem !important;
+  font-size: 0.78rem !important;
+  color: var(--ink) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border);
+  background: white !important;
+  white-space: nowrap;
+}
+.dropdown a:last-child { border-bottom: none; }
+.dropdown a:hover { background: var(--paper) !important; color: var(--accent) !important; }
