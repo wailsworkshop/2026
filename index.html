@@ -7,6 +7,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<style>
+  /* Dropdown nav */
+  .nav-links > li { position: relative; }
+  .has-dropdown > a::after { content: " ▾"; font-size: 0.55rem; opacity: 0.5; vertical-align: middle; }
+  .dropdown { display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); padding-top:0.8rem; z-index:999; min-width:190px; }
+  .has-dropdown:hover > .dropdown { display:block; }
+  .dropdown-inner { background:white; border:1px solid var(--border); border-radius:3px; box-shadow:0 8px 24px rgba(0,0,0,0.1); overflow:hidden; }
+  .dropdown a { display:block !important; padding:0.7rem 1.2rem !important; font-size:0.78rem !important; color:var(--ink) !important; text-transform:uppercase; letter-spacing:0.05em; font-weight:500; border-bottom:1px solid var(--border); background:white !important; white-space:nowrap; }
+  .dropdown a:last-child { border-bottom:none; }
+  .dropdown a:hover { background:var(--paper) !important; color:var(--accent) !important; }
+</style>
 </head>
 <body>
 <nav>
@@ -22,19 +33,15 @@
     <li class="has-dropdown">
       <a href="#">Attend</a>
       <div class="dropdown">
-          <div class="dropdown-inner">
-            <a href="attend-registration.html">Registration</a>
-            <a href="attend-travel.html">Travel Information</a>
-          </div>
+        <a href="attend-registration.html">Registration</a>
+        <a href="attend-travel.html">Travel Information</a>
       </div>
     </li>
     <li class="has-dropdown">
       <a href="#">Schedule</a>
       <div class="dropdown">
-          <div class="dropdown-inner">
         <a href="schedule-programme.html">Programme</a>
         <a href="schedule-accepted-papers.html">Accepted Papers</a>
-          </div>
       </div>
     </li>
     <li><a href="#cfp" class="nav-cta">Submit</a></li>
@@ -354,11 +361,11 @@
   <div class="f-links">
     <a href="https://wailsworkshop.github.io/2025/" target="_blank">WAILS 2025 &nearr;</a>
     <a href="https://wailsworkshop.github.io/2024/" target="_blank">WAILS 2024 &nearr;</a>
-    <a href="mailto:wailsworkshop@outlook.com">Contact</a>
+    <a href="/cdn-cgi/l/email-protection#bfc8ded6d3ccc8d0cdd4ccd7d0cfffd0cacbd3d0d0d491dcd0d2">Contact</a>
   </div>
 </footer>
 
-<script src="./js/countdown.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./js/countdown.js"></script>
 <script src="./js/slider.js"></script>
 <script>
 (function() {
@@ -382,11 +389,4 @@
     setInterval(function() {
       slides[cur].classList.remove('active');
       cur = (cur + 1) % slides.length;
-      slides[cur].classList.add('active');
-      if (caption) caption.textContent = slides[cur].getAttribute('data-credit') || '';
-    }, 4500);
-  }
-})();
-</script>
-</body>
-</html>
+      slides[cur].classL
