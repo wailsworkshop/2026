@@ -63,7 +63,7 @@
   .s-eyebrow::before { content: ""; display: block; width: 20px; height: 1px; background: var(--accent); }
   .s-title { font-family: "Playfair Display", serif; font-size: clamp(1.8rem, 2.5vw, 2.8rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 0.8rem; }
   .s-lead { color: var(--muted); max-width: 560px; font-weight: 300; font-size: 1rem; line-height: 1.75; margin-bottom: 3rem; }
-
+  .s-call { color: var(--muted); max-width: 100%; font-weight: 300; font-size: 1rem; line-height: 1.75; margin-bottom: 3rem; }
   .about { background: white; }
   .about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 5rem; align-items: start; }
   .about-body { color: var(--muted); font-size: 0.95rem; line-height: 1.8; margin-bottom: 2rem; }
@@ -213,3 +213,110 @@
 }
 .dropdown a:last-child { border-bottom: none; }
 .dropdown a:hover { background: var(--paper) !important; color: var(--accent) !important; }
+
+
+.cfp-page { padding-top: 72px; }
+.cfp-hero { background: var(--ink); color: white; padding: 6rem; }
+.cfp-hero .s-eyebrow { color: var(--accent); }
+.cfp-hero .s-eyebrow::before { background: var(--accent); }
+.cfp-hero h1 { font-family: "Playfair Display", serif; font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.2rem; }
+.cfp-hero h1 em { color: var(--accent); font-style: italic; }
+.cfp-hero p { color: rgba(255,255,255,0.6); max-width: 600px; font-size: 1.05rem; line-height: 1.75; font-weight: 300; }
+.cfp-body { background: white; padding: 5rem 6rem; }
+.cfp-body h2 { font-family: "Playfair Display", serif; font-size: 1.6rem; font-weight: 700; margin: 2.5rem 0 0.8rem; color: var(--ink); }
+.cfp-body h2:first-child { margin-top: 0; }
+.cfp-body p { color: var(--muted); font-size: 0.98rem; line-height: 1.8; margin-bottom: 1rem; }
+.cfp-body ul { color: var(--muted); font-size: 0.98rem; line-height: 1.8; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.cfp-body ul li { margin-bottom: 0.4rem; }
+.cfp-body strong { color: var(--ink); font-weight: 600; }
+.dates-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 2rem 0; }
+.date-card { border: 1px solid var(--border); padding: 1.5rem; border-left: 3px solid var(--accent); border-radius: 2px; }
+.date-card .date-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 600; margin-bottom: 0.4rem; }
+.date-card .date-value { font-family: "Playfair Display", serif; font-size: 1.1rem; font-weight: 700; color: var(--ink); }
+.back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent); text-decoration: none; font-size: 0.82rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3rem; }
+.back-link:hover { color: var(--accent-dark); }
+
+
+.cfp-page { padding-top: 72px; }
+.cfp-hero { background: var(--ink); color: white; padding: 6rem; }
+.cfp-hero .s-eyebrow { color: var(--accent); }
+.cfp-hero .s-eyebrow::before { background: var(--accent); }
+.cfp-hero h1 { font-family: "Playfair Display", serif; font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.2rem; }
+.cfp-hero h1 em { color: var(--accent); font-style: italic; }
+.cfp-hero p { color: rgba(255,255,255,0.6); max-width: 600px; font-size: 1.05rem; line-height: 1.75; font-weight: 300; }
+.cfp-body { background: white; padding: 5rem 6rem; }
+.cfp-body h2 { font-family: "Playfair Display", serif; font-size: 1.6rem; font-weight: 700; margin: 2.5rem 0 0.8rem; color: var(--ink); }
+.cfp-body h2:first-child { margin-top: 0; }
+.cfp-body p { color: var(--muted); font-size: 0.98rem; line-height: 1.8; margin-bottom: 1rem; }
+.cfp-body ul { color: var(--muted); font-size: 0.98rem; line-height: 1.8; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.cfp-body ul li { margin-bottom: 0.4rem; }
+.cfp-body strong { color: var(--ink); font-weight: 600; }
+.dates-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 2rem 0; }
+.date-card { border: 1px solid var(--border); padding: 1.5rem; border-left: 3px solid var(--accent); border-radius: 2px; }
+.date-card .date-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 600; margin-bottom: 0.4rem; }
+.date-card .date-value { font-family: "Playfair Display", serif; font-size: 1.1rem; font-weight: 700; color: var(--ink); }
+.back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent); text-decoration: none; font-size: 0.82rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3rem; }
+.back-link:hover { color: var(--accent-dark); }
+
+.cfp-page { padding-top: 72px; }
+.cfp-hero { background: var(--ink); color: white; padding: 6rem; }
+.cfp-hero .s-eyebrow { color: var(--accent); }
+.cfp-hero .s-eyebrow::before { background: var(--accent); }
+.cfp-hero h1 { font-family: "Playfair Display", serif; font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.2rem; }
+.cfp-hero h1 em { color: var(--accent); font-style: italic; }
+.cfp-hero p { color: rgba(255,255,255,0.6); max-width: 600px; font-size: 1.05rem; line-height: 1.75; font-weight: 300; }
+.cfp-body { background: white; padding: 5rem 6rem; }
+.cfp-body h2 { font-family: "Playfair Display", serif; font-size: 1.6rem; font-weight: 700; margin: 2.5rem 0 0.8rem; color: var(--ink); }
+.cfp-body h2:first-child { margin-top: 0; }
+.cfp-body p { color: var(--muted); font-size: 0.98rem; line-height: 1.8; margin-bottom: 1rem; }
+.cfp-body ul { color: var(--muted); font-size: 0.98rem; line-height: 1.8; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.cfp-body ul li { margin-bottom: 0.4rem; }
+.cfp-body strong { color: var(--ink); font-weight: 600; }
+.dates-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 2rem 0; }
+.date-card { border: 1px solid var(--border); padding: 1.5rem; border-left: 3px solid var(--accent); border-radius: 2px; }
+.date-card .date-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 600; margin-bottom: 0.4rem; }
+.date-card .date-value { font-family: "Playfair Display", serif; font-size: 1.1rem; font-weight: 700; color: var(--ink); }
+.back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent); text-decoration: none; font-size: 0.82rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3rem; }
+.back-link:hover { color: var(--accent-dark); }
+
+
+/* ── TOPICS OF INTEREST ── */
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0 1.5rem;
+}
+.topic-card {
+    grid-column: span 3;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 2px;
+    padding: 1.5rem;
+}
+.topic-card:nth-child(5) {
+    grid-column: span 3;
+}
+.topic-card--wide {
+    grid-column: span 3;
+    border-left-color: var(--accent2);
+}
+
+.topic-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.topic-card ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.topic-card ul li {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 0.35rem;
+}

@@ -1,392 +1,670 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WAILS 2026 – Paris</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<style>
-  /* Dropdown nav */
-  .nav-links > li { position: relative; }
-  .has-dropdown > a::after { content: " ▾"; font-size: 0.55rem; opacity: 0.5; vertical-align: middle; }
-  .dropdown { display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); padding-top:0.8rem; z-index:999; min-width:190px; }
-  .has-dropdown:hover > .dropdown { display:block; }
-  .dropdown-inner { background:white; border:1px solid var(--border); border-radius:3px; box-shadow:0 8px 24px rgba(0,0,0,0.1); overflow:hidden; }
-  .dropdown a { display:block !important; padding:0.7rem 1.2rem !important; font-size:0.78rem !important; color:var(--ink) !important; text-transform:uppercase; letter-spacing:0.05em; font-weight:500; border-bottom:1px solid var(--border); background:white !important; white-space:nowrap; }
-  .dropdown a:last-child { border-bottom:none; }
-  .dropdown a:hover { background:var(--paper) !important; color:var(--accent) !important; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAILS 2026 – Paris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <nav>
-  <a class="nav-logo" href="#">
-    <!-- <img src="img/logo/logo.png" alt="WAILS 2026" style="height:36px;"> -->
-    WAILS<span>.</span>2026
-  </a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#cfp">Call for Papers</a></li>
-    <li><a href="#keynotes">Keynotes</a></li>
-    <li><a href="#committee">Committee</a></li>
-    <li class="has-dropdown">
-      <a href="#">Attend</a>
-      <div class="dropdown">
-        <a href="attend-registration.html">Registration</a>
-        <a href="attend-travel.html">Travel Information</a>
-      </div>
-    </li>
-    <li class="has-dropdown">
-      <a href="#">Schedule</a>
-      <div class="dropdown">
-        <a href="schedule-programme.html">Programme</a>
-        <a href="schedule-accepted-papers.html">Accepted Papers</a>
-      </div>
-    </li>
-    <li><a href="#cfp" class="nav-cta">Submit</a></li>
-  </ul>
+    <a class="nav-logo" href="#">
+        <!-- <img src="img/logo/logo.png" alt="WAILS 2026" style="height:36px;"> -->
+        WAILS<span>.</span>2026
+    </a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#cfp">Call for Papers</a></li>
+        <li><a href="#keynotes">Keynotes</a></li>
+        <li><a href="#committee">Committee</a></li>
+        <li class="has-dropdown">
+            <a href="#">Attend</a>
+            <div class="dropdown">
+                <a href="attend-registration.html">Registration</a>
+                <a href="attend-travel.html">Travel Information</a>
+            </div>
+        </li>
+        <li class="has-dropdown">
+            <a href="#">Schedule</a>
+            <div class="dropdown">
+                <a href="schedule-programme.html">Programme</a>
+                <a href="schedule-accepted-papers.html">Accepted Papers</a>
+            </div>
+        </li>
+        <li><a href="#cfp" class="nav-cta">Submit</a></li>
+    </ul>
 </nav>
 
 <div class="hero">
-  <div class="hero-left">
-    <div class="eyebrow">3rd Edition &middot; 9&ndash;11 December 2026</div>
-    <h1 class="hero-title">WAILS<br><em>2026</em></h1>
-    <p class="hero-sub">Workshop on Artificial Intelligence with and for Learning Sciences.<br>Theme: <strong>Responsible Use of AI in Education</strong>.</p>
-    <div class="hero-meta">
-      <div class="meta-item">
-        <span class="meta-label">Location</span>
-        <span class="meta-value">Paris, France</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Date</span>
-        <span class="meta-value">9&ndash;11 Dec 2026</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Edition</span>
-        <span class="meta-value">3rd</span>
-      </div>
+    <div class="hero-left">
+        <div class="eyebrow">3rd Edition &middot; 9&ndash;11 December 2026</div>
+        <h1 class="hero-title">WAILS<br><em>2026</em></h1>
+        <p class="hero-sub">Workshop on Artificial Intelligence with and for Learning Sciences.<br>Theme: <strong>Responsible
+            Use of AI in Education</strong>.</p>
+        <div class="hero-meta">
+            <div class="meta-item">
+                <span class="meta-label">Location</span>
+                <span class="meta-value">Paris, France</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Date</span>
+                <span class="meta-value">9&ndash;11 Dec 2026</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Edition</span>
+                <span class="meta-value">3rd</span>
+            </div>
+        </div>
+        <div class="actions">
+            <a href="#cfp" class="btn btn-fill">Submit a Paper</a>
+            <a href="#about" class="btn btn-ghost">Learn More</a>
+        </div>
     </div>
-    <div class="actions">
-      <a href="#cfp" class="btn btn-fill">Submit a Paper</a>
-      <a href="#about" class="btn btn-ghost">Learn More</a>
+    <div class="hero-right">
+        <svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <rect width="600" height="700" fill="#0f0f0f"/>
+            <g stroke="rgba(255,255,255,0.035)" stroke-width="1">
+                <line x1="0" y1="116" x2="600" y2="116"/>
+                <line x1="0" y1="233" x2="600" y2="233"/>
+                <line x1="0" y1="350" x2="600" y2="350"/>
+                <line x1="0" y1="466" x2="600" y2="466"/>
+                <line x1="0" y1="583" x2="600" y2="583"/>
+                <line x1="120" y1="0" x2="120" y2="700"/>
+                <line x1="240" y1="0" x2="240" y2="700"/>
+                <line x1="360" y1="0" x2="360" y2="700"/>
+                <line x1="480" y1="0" x2="480" y2="700"/>
+            </g>
+            <g fill="none" stroke-width="1.5">
+                <line x1="220" y1="590" x2="288" y2="310" stroke="rgba(196,92,138,0.65)"/>
+                <line x1="380" y1="590" x2="312" y2="310" stroke="rgba(196,92,138,0.65)"/>
+                <line x1="288" y1="310" x2="300" y2="130" stroke="rgba(196,92,138,0.65)"/>
+                <line x1="312" y1="310" x2="300" y2="130" stroke="rgba(196,92,138,0.65)"/>
+                <line x1="300" y1="130" x2="300" y2="78" stroke="rgba(196,92,138,0.65)"/>
+                <path d="M220,590 Q242,500 288,455" stroke="rgba(196,92,138,0.4)"/>
+                <path d="M380,590 Q358,500 312,455" stroke="rgba(196,92,138,0.4)"/>
+                <line x1="238" y1="535" x2="362" y2="535" stroke="rgba(196,92,138,0.5)"/>
+                <line x1="252" y1="480" x2="348" y2="480" stroke="rgba(196,92,138,0.5)"/>
+                <line x1="272" y1="400" x2="328" y2="400" stroke="rgba(196,92,138,0.5)"/>
+                <line x1="283" y1="340" x2="317" y2="340" stroke="rgba(196,92,138,0.5)"/>
+                <line x1="291" y1="280" x2="309" y2="280" stroke="rgba(196,92,138,0.4)"/>
+                <line x1="295" y1="230" x2="305" y2="230" stroke="rgba(196,92,138,0.25)"/>
+                <line x1="296" y1="185" x2="304" y2="185" stroke="rgba(196,92,138,0.25)"/>
+            </g>
+            <circle cx="300" cy="75" r="3.5" fill="#C45C8A"/>
+            <circle cx="300" cy="360" r="195" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+            <circle cx="300" cy="360" r="260" fill="none" stroke="rgba(255,255,255,0.015)" stroke-width="1"/>
+            <g stroke="rgba(232,164,74,0.25)" stroke-width="1" fill="rgba(232,164,74,0.25)">
+                <circle cx="85" cy="90" r="3.5"/>
+                <circle cx="155" cy="130" r="2.5"/>
+                <circle cx="70" cy="185" r="2.5"/>
+                <circle cx="130" cy="70" r="2"/>
+                <circle cx="175" cy="180" r="2"/>
+                <line x1="85" y1="90" x2="155" y2="130"/>
+                <line x1="155" y1="130" x2="70" y2="185"/>
+                <line x1="85" y1="90" x2="70" y2="185"/>
+                <line x1="85" y1="90" x2="130" y2="70"/>
+                <line x1="155" y1="130" x2="175" y2="180"/>
+            </g>
+            <g stroke="rgba(232,164,74,0.25)" stroke-width="1" fill="rgba(232,164,74,0.25)">
+                <circle cx="490" cy="580" r="3.5"/>
+                <circle cx="545" cy="540" r="2.5"/>
+                <circle cx="510" cy="640" r="2.5"/>
+                <circle cx="465" cy="620" r="2"/>
+                <circle cx="555" cy="600" r="2"/>
+                <line x1="490" y1="580" x2="545" y2="540"/>
+                <line x1="545" y1="540" x2="510" y2="640"/>
+                <line x1="490" y1="580" x2="510" y2="640"/>
+                <line x1="490" y1="580" x2="465" y2="620"/>
+                <line x1="545" y1="540" x2="555" y2="600"/>
+            </g>
+            <circle cx="75" cy="310" r="1.5" fill="rgba(255,255,255,0.18)"/>
+            <circle cx="520" cy="250" r="1.5" fill="rgba(255,255,255,0.18)"/>
+            <circle cx="160" cy="520" r="1.5" fill="rgba(255,255,255,0.12)"/>
+            <circle cx="450" cy="130" r="1.5" fill="rgba(255,255,255,0.12)"/>
+            <circle cx="50" cy="430" r="1" fill="rgba(196,92,138,0.35)"/>
+            <circle cx="555" cy="370" r="1" fill="rgba(196,92,138,0.35)"/>
+        </svg>
+        <div class="paris-word">Paris</div>
+        <div class="hero-slider">
+            <img src="img/slider/paris01.jpg" alt="Paris" data-credit="© Alexander Kagan / Unsplash">
+            <img src="img/slider/paris02.jpg" alt="Paris" data-credit="© Chris Karidis / Unsplash">
+            <img src="img/slider/paris03.jpg" alt="Paris" data-credit="© John Towner / Unsplash">
+            <img src="img/slider/paris04.jpg" alt="Paris" data-credit="© Léonard Cotte / Unsplash">
+            <img src="img/slider/paris05.jpg" alt="Paris" data-credit="© Marloes Hilckmann / Unsplash">
+            <img src="img/slider/paris06.jpg" alt="Paris" data-credit="© Adrienn / Pexels">
+            <img src="img/slider/paris07.jpg" alt="Paris" data-credit="© Arthouse Studio / Pexels">
+            <img src="img/slider/paris08.jpg" alt="Paris" data-credit="© Jo Kassis / Pexels">
+            <img src="img/slider/paris09.jpg" alt="Paris" data-credit="© Olivers / Pexels">
+            <img src="img/slider/paris10.jpg" alt="Paris" data-credit="© Peter de Vink / Pexels">
+            <img src="img/slider/paris11.jpg" alt="Paris" data-credit="© Pia G / Pexels">
+            <img src="img/slider/paris12.jpg" alt="Paris" data-credit="© Shvets / Pexels">
+            <img src="img/slider/paris13.jpg" alt="Paris" data-credit="© Tripatpal Singh / Pexels">
+            <img src="img/slider/paris14.jpg" alt="Paris" data-credit="© Viviana Ceballos / Pexels">
+        </div>
+        <div class="slider-credit" id="slider-caption"></div>
     </div>
-  </div>
-  <div class="hero-right">
-    <svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-      <rect width="600" height="700" fill="#0f0f0f"/>
-      <g stroke="rgba(255,255,255,0.035)" stroke-width="1">
-        <line x1="0" y1="116" x2="600" y2="116"/><line x1="0" y1="233" x2="600" y2="233"/>
-        <line x1="0" y1="350" x2="600" y2="350"/><line x1="0" y1="466" x2="600" y2="466"/>
-        <line x1="0" y1="583" x2="600" y2="583"/>
-        <line x1="120" y1="0" x2="120" y2="700"/><line x1="240" y1="0" x2="240" y2="700"/>
-        <line x1="360" y1="0" x2="360" y2="700"/><line x1="480" y1="0" x2="480" y2="700"/>
-      </g>
-      <g fill="none" stroke-width="1.5">
-        <line x1="220" y1="590" x2="288" y2="310" stroke="rgba(196,92,138,0.65)"/>
-        <line x1="380" y1="590" x2="312" y2="310" stroke="rgba(196,92,138,0.65)"/>
-        <line x1="288" y1="310" x2="300" y2="130" stroke="rgba(196,92,138,0.65)"/>
-        <line x1="312" y1="310" x2="300" y2="130" stroke="rgba(196,92,138,0.65)"/>
-        <line x1="300" y1="130" x2="300" y2="78" stroke="rgba(196,92,138,0.65)"/>
-        <path d="M220,590 Q242,500 288,455" stroke="rgba(196,92,138,0.4)"/>
-        <path d="M380,590 Q358,500 312,455" stroke="rgba(196,92,138,0.4)"/>
-        <line x1="238" y1="535" x2="362" y2="535" stroke="rgba(196,92,138,0.5)"/>
-        <line x1="252" y1="480" x2="348" y2="480" stroke="rgba(196,92,138,0.5)"/>
-        <line x1="272" y1="400" x2="328" y2="400" stroke="rgba(196,92,138,0.5)"/>
-        <line x1="283" y1="340" x2="317" y2="340" stroke="rgba(196,92,138,0.5)"/>
-        <line x1="291" y1="280" x2="309" y2="280" stroke="rgba(196,92,138,0.4)"/>
-        <line x1="295" y1="230" x2="305" y2="230" stroke="rgba(196,92,138,0.25)"/>
-        <line x1="296" y1="185" x2="304" y2="185" stroke="rgba(196,92,138,0.25)"/>
-      </g>
-      <circle cx="300" cy="75" r="3.5" fill="#C45C8A"/>
-      <circle cx="300" cy="360" r="195" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
-      <circle cx="300" cy="360" r="260" fill="none" stroke="rgba(255,255,255,0.015)" stroke-width="1"/>
-      <g stroke="rgba(232,164,74,0.25)" stroke-width="1" fill="rgba(232,164,74,0.25)">
-        <circle cx="85" cy="90" r="3.5"/><circle cx="155" cy="130" r="2.5"/><circle cx="70" cy="185" r="2.5"/>
-        <circle cx="130" cy="70" r="2"/><circle cx="175" cy="180" r="2"/>
-        <line x1="85" y1="90" x2="155" y2="130"/><line x1="155" y1="130" x2="70" y2="185"/>
-        <line x1="85" y1="90" x2="70" y2="185"/><line x1="85" y1="90" x2="130" y2="70"/>
-        <line x1="155" y1="130" x2="175" y2="180"/>
-      </g>
-      <g stroke="rgba(232,164,74,0.25)" stroke-width="1" fill="rgba(232,164,74,0.25)">
-        <circle cx="490" cy="580" r="3.5"/><circle cx="545" cy="540" r="2.5"/><circle cx="510" cy="640" r="2.5"/>
-        <circle cx="465" cy="620" r="2"/><circle cx="555" cy="600" r="2"/>
-        <line x1="490" y1="580" x2="545" y2="540"/><line x1="545" y1="540" x2="510" y2="640"/>
-        <line x1="490" y1="580" x2="510" y2="640"/><line x1="490" y1="580" x2="465" y2="620"/>
-        <line x1="545" y1="540" x2="555" y2="600"/>
-      </g>
-      <circle cx="75" cy="310" r="1.5" fill="rgba(255,255,255,0.18)"/>
-      <circle cx="520" cy="250" r="1.5" fill="rgba(255,255,255,0.18)"/>
-      <circle cx="160" cy="520" r="1.5" fill="rgba(255,255,255,0.12)"/>
-      <circle cx="450" cy="130" r="1.5" fill="rgba(255,255,255,0.12)"/>
-      <circle cx="50" cy="430" r="1" fill="rgba(196,92,138,0.35)"/>
-      <circle cx="555" cy="370" r="1" fill="rgba(196,92,138,0.35)"/>
-    </svg>
-    <div class="paris-word">Paris</div>
-      <div class="hero-slider">
-          <img src="img/slider/paris01.jpg" alt="Paris" data-credit="© Alexander Kagan / Unsplash">
-          <img src="img/slider/paris02.jpg" alt="Paris" data-credit="© Chris Karidis / Unsplash">
-          <img src="img/slider/paris03.jpg" alt="Paris" data-credit="© John Towner / Unsplash">
-          <img src="img/slider/paris04.jpg" alt="Paris" data-credit="© Léonard Cotte / Unsplash">
-          <img src="img/slider/paris05.jpg" alt="Paris" data-credit="© Marloes Hilckmann / Unsplash">
-          <img src="img/slider/paris06.jpg" alt="Paris" data-credit="© Adrienn / Pexels">
-          <img src="img/slider/paris07.jpg" alt="Paris" data-credit="© Arthouse Studio / Pexels">
-          <img src="img/slider/paris08.jpg" alt="Paris" data-credit="© Jo Kassis / Pexels">
-          <img src="img/slider/paris09.jpg" alt="Paris" data-credit="© Olivers / Pexels">
-          <img src="img/slider/paris10.jpg" alt="Paris" data-credit="© Peter de Vink / Pexels">
-          <img src="img/slider/paris11.jpg" alt="Paris" data-credit="© Pia G / Pexels">
-          <img src="img/slider/paris12.jpg" alt="Paris" data-credit="© Shvets / Pexels">
-          <img src="img/slider/paris13.jpg" alt="Paris" data-credit="© Tripatpal Singh / Pexels">
-          <img src="img/slider/paris14.jpg" alt="Paris" data-credit="© Viviana Ceballos / Pexels">
-      </div>
-      <div class="slider-credit" id="slider-caption"></div>
-  </div>
 </div>
 
 <div class="countdown">
-  <div class="cd-label">Countdown to WAILS 2026</div>
-  <div class="cd-units">
-    <div class="cd-unit"><span class="cd-num" id="cd-d">—</span><span class="cd-name">Days</span></div>
-    <span class="cd-dot">&middot;</span>
-    <div class="cd-unit"><span class="cd-num" id="cd-h">—</span><span class="cd-name">Hours</span></div>
-    <span class="cd-dot">&middot;</span>
-    <div class="cd-unit"><span class="cd-num" id="cd-m">—</span><span class="cd-name">Min</span></div>
-    <span class="cd-dot">&middot;</span>
-    <div class="cd-unit"><span class="cd-num" id="cd-s">—</span><span class="cd-name">Sec</span></div>
-  </div>
-  <a href="#cfp" class="btn btn-fill" style="white-space:nowrap">Submit a Paper &rarr;</a>
+    <div class="cd-label">Countdown to WAILS 2026</div>
+    <div class="cd-units">
+        <div class="cd-unit"><span class="cd-num" id="cd-d">—</span><span class="cd-name">Days</span></div>
+        <span class="cd-dot">&middot;</span>
+        <div class="cd-unit"><span class="cd-num" id="cd-h">—</span><span class="cd-name">Hours</span></div>
+        <span class="cd-dot">&middot;</span>
+        <div class="cd-unit"><span class="cd-num" id="cd-m">—</span><span class="cd-name">Min</span></div>
+        <span class="cd-dot">&middot;</span>
+        <div class="cd-unit"><span class="cd-num" id="cd-s">—</span><span class="cd-name">Sec</span></div>
+    </div>
+    <a href="#cfp" class="btn btn-fill" style="white-space:nowrap">Submit a Paper &rarr;</a>
 </div>
 
 <section class="about" id="about">
-  <div class="about-grid">
-    <div>
-      <div class="s-eyebrow">About the Workshop</div>
-      <h2 class="s-title">AI &amp; Education.<br>Responsibly and Inclusively.</h2>
-      <p class="about-body">WAILS 2026 is the 3rd edition of the Workshop on Artificial Intelligence with and for Learning Sciences. Building on two successful editions (Salerno 2024, Cagliari 2025), this year focuses on the responsible, ethical, and equitable use of AI in educational contexts.</p>
-      <p class="about-body">The workshop brings together researchers and practitioners from computer science, education, cognitive science, HCI, psychology, and social sciences. Accepted papers will be published in the <strong>Springer LNCS</strong> series and indexed in DBLP, Google Scholar, and Scopus.</p>
-      <a href="#cfp" class="btn btn-fill">View Call for Papers</a>
+    <div class="about-grid">
+        <div>
+            <div class="s-eyebrow">About the Workshop</div>
+            <h2 class="s-title">AI &amp; Education.<br>Responsibly and Inclusively.</h2>
+            <p class="about-body">WAILS 2026 is the 3rd edition of the Workshop on Artificial Intelligence with and for
+                Learning Sciences. Building on two successful editions (Salerno 2024, Cagliari 2025), this year focuses
+                on the responsible, ethical, and equitable use of AI in educational contexts.
+                If AI makes learning easier, are we still learning or merely optimizing task completion?
+                AI systems can support reasoning, creativity, and decision-making. Yet they can also obscure
+                understanding, reinforce bias, and reduce cognitive effort.
+                WAILS 2026 is grounded in a simple premise:
+                <br><br>
+                <cite> AI should not replace thinking, it should make thinking more visible, critical, and meaningful.
+                </cite>
+                <br><br>
+                We invite the community to critically examine and shape the role of AI in education through evidence,
+                design, and theory.
+            </p>
+
+            <a href="#cfp" class="btn btn-fill">View Call for Papers</a>
+        </div>
+        <div>
+            <div class="s-eyebrow" style="margin-top:0.5rem">Key Topics</div>
+            <div class="themes">
+                <div class="theme"><h4>Responsible AI in Education</h4>
+                    <p>Transparency, explainability, and accountability of AI-powered learning tools.</p></div>
+                <div class="theme"><h4>Equity, Fairness & Inclusion</h4>
+                    <p>Fostering fair and equitable AI-driven learning for all.</p></div>
+                <div class="theme"><h4>Human-Centered AI</h4>
+                    <p>Fostering learner agency and keeping humans at the center of AI-driven education.</p></div>
+                <div class="theme"><h4>Serious Games & Inclusive Learning</h4>
+                    <p>Fostering inclusion through AI-powered game-based learning.</p></div>
+            </div>
+        </div>
     </div>
-    <div>
-      <div class="s-eyebrow" style="margin-top:0.5rem">Key Topics</div>
-      <div class="themes">
-        <div class="theme"><h4>Responsible AI in Education</h4><p>Transparency, explainability, and accountability of AI-powered learning tools.</p></div>
-        <div class="theme"><h4>Equity, Fairness & Inclusion</h4><p>Fostering fair and equitable AI-driven learning for all.</p></div>
-        <div class="theme"><h4>Human-Centered AI</h4><p>Fostering learner agency and keeping humans at the center of AI-driven education.</p></div>
-        <div class="theme"><h4>Serious Games & Inclusive Learning</h4><p>Fostering inclusion through AI-powered game-based learning.</p></div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <section class="cfp" id="cfp">
-  <div class="s-eyebrow">Submissions</div>
-  <h2 class="s-title">Call for Papers</h2>
-  <p class="s-lead">We welcome original research across three tracks. All submissions undergo double-blind peer review.</p>
-  <div class="cfp-grid">
-    <div class="cfp-card"><div class="cfp-num">01</div><h3>Full Papers</h3><p>Novel findings, methods, or theoretical frameworks. Up to 12 pages (excl. references), Springer LNCS format.</p><span class="deadline">Deadline: TBA</span><br><br><a href="cfp-full-papers.html" class="btn btn-fill" style="font-size:0.75rem;padding:0.5rem 1.2rem;">Read More &rarr;</a></div>
-    <div class="cfp-card"><div class="cfp-num">02</div><h3>Short Papers</h3><p>Work-in-progress, position papers, and preliminary results. Up to 6 pages (excl. references).</p><span class="deadline">Deadline: TBA</span><br><br><a href="cfp-short-papers.html" class="btn btn-fill" style="font-size:0.75rem;padding:0.5rem 1.2rem;">Read More &rarr;</a></div>
-    <div class="cfp-card"><div class="cfp-num">03</div><h3>Doctoral Consortium</h3><p>PhD students present ongoing research and receive feedback from senior researchers and peers.</p><span class="deadline">Deadline: TBA</span><br><br><a href="cfp-doctoral-consortium.html" class="btn btn-fill" style="font-size:0.75rem;padding:0.5rem 1.2rem;">Read More &rarr;</a></div>
-  </div>
+    <div class="s-eyebrow">Submissions</div>
+    <h2 class="s-title">Call for Papers</h2>
+    <p class="s-call">
+        The workshop brings together researchers and practitioners from computer science, education, cognitive science,
+        psychology, ethics, economics, human-computer interaction, and social sciences.
+    </p>
+
+
+    <h2>Topics of Interest</h2>
+    <p class="s-call">We welcome contributions on (but not limited to) the following topics:</p>
+
+    <div class="topics-grid">
+
+        <div class="topic-card">
+            <h3>Responsible AI in Education</h3>
+            <ul>
+                <li>Transparency, explainability, and accountability in AI-powered learning systems</li>
+                <li>Communicating AI limitations (e.g., hallucinations, uncertainty) to users</li>
+                <li>Large language models in educational contexts</li>
+                <li>Privacy, data protection, and governance of student data</li>
+                <li>Learning analytics and educational data mining</li>
+                <li>Ethical frameworks and governance for AI in education</li>
+                <li>AI policy and regulation in educational institutions</li>
+                <li>Designing systems that make risks visible, interpretable, and actionable</li>
+            </ul>
+        </div>
+
+        <div class="topic-card">
+            <h3>Equity, Fairness &amp; Inclusion</h3>
+            <ul>
+                <li>Bias detection, measurement, and mitigation in educational AI</li>
+                <li>Inclusive and accessible AI-supported learning environments</li>
+                <li>Addressing inequalities in access, representation, and AI literacy</li>
+                <li>AI for supporting diverse and underserved learners</li>
+                <li>Sociological and cultural factors in AI adoption across educational contexts</li>
+                <li>Digital divide and unequal access to AI-powered tools</li>
+                <li>Gender, race, and disability bias in AI-powered learning systems</li>
+                <li>Community-based and participatory approaches to equitable AI design</li>
+            </ul>
+        </div>
+
+        <div class="topic-card">
+            <h3>Human-Centered AI</h3>
+            <ul>
+                <li>Learner agency vs. over-reliance and automation bias</li>
+                <li>Cognitive impacts of AI use (e.g., shallow learning, reduced effort, illusion of understanding)</li>
+                <li>Intelligent tutoring systems and conversational agents</li>
+                <li>Evolving teacher roles: augmentation, adaptation, or deskilling</li>
+                <li>Designing for reflection, reasoning, and metacognition</li>
+                <li>Cognitive science and psychological dimensions of AI-supported learning</li>
+                <li>Student wellbeing and mental health in AI-mediated learning</li>
+                <li>Adaptive and personalized learning environments</li>
+            </ul>
+        </div>
+
+        <div class="topic-card">
+            <h3>Serious Games &amp; Inclusive Learning</h3>
+            <ul>
+                <li>AI-enhanced serious games for education and training</li>
+                <li>Game-based approaches for AI literacy and critical thinking</li>
+                <li>Serious games for social-emotional learning and inclusion</li>
+                <li>Participatory design of serious games with marginalized communities</li>
+                <li>Narrative and storytelling in AI-driven educational games</li>
+                <li>Emotional and motivational dimensions of game-based learning</li>
+                <li>AI-generated content in serious games: opportunities and risks</li>
+                <li>Accessibility and universal design in serious games</li>
+                <li>Transfer of learning from game-based to real-world contexts</li>
+            </ul>
+        </div>
+
+        <div class="topic-card">
+            <h3>Interdisciplinary &amp; Social Perspectives</h3>
+            <ul>
+                <li>Sociological and psychological dimensions of AI in education</li>
+                <li>Cognitive science approaches to AI-supported learning</li>
+                <li>Economic and policy implications of AI adoption in education</li>
+                <li>Cultural and contextual factors in AI-enhanced learning environments</li>
+                <li>AI and the future of educational institutions</li>
+                <li>Philosophical and ethical dimensions of AI in education</li>
+                <li>Cross-cultural perspectives on AI-supported learning</li>
+                <li>AI and educational equity from a policy perspective</li>
+            </ul>
+        </div>
+
+        <div class="topic-card topic-card--wide">
+            <h3>Cross-Cutting Questions</h3>
+            <ul>
+                <li>What does it mean to learn in the age of AI?</li>
+                <li>When does AI augment learning, and when does it replace it?</li>
+                <li>How do we define learning success when AI completes tasks for students?</li>
+                <li>What skills and competencies remain distinctly human in an AI-augmented world?</li>
+                <li>How does AI change the nature of creativity, problem-solving, and critical thinking?</li>
+                <li>How should teachers be trained to critically evaluate and deploy AI tools?</li>
+                <li>How do we ensure that AI tools do not reinforce existing educational inequalities?</li>
+                <li>How do we evaluate the long-term impact of AI on learning outcomes?</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <p></p>
+
+
+    <div class="cfp-grid">
+        <div class="cfp-card">
+            <div class="cfp-num">01</div>
+            <h3>Full Papers</h3>
+            <p>Novel findings, methods, or theoretical frameworks. Up to 12 pages (excl. references), Springer LNCS
+                format.</p><span class="deadline">Deadline: TBA</span><br><br><a href="cfp-full-papers.html"
+                                                                                 class="btn btn-fill"
+                                                                                 style="font-size:0.75rem;padding:0.5rem 1.2rem;">Read
+            More &rarr;</a></div>
+        <div class="cfp-card">
+            <div class="cfp-num">02</div>
+            <h3>Short Papers</h3>
+            <p>Work-in-progress, position papers, and preliminary results. Up to 6 pages (excl. references).</p><span
+                class="deadline">Deadline: TBA</span><br><br><a href="cfp-short-papers.html" class="btn btn-fill"
+                                                                style="font-size:0.75rem;padding:0.5rem 1.2rem;">Read
+            More &rarr;</a></div>
+        <div class="cfp-card">
+            <div class="cfp-num">03</div>
+            <h3>Doctoral Consortium</h3>
+            <p>PhD students present ongoing research and receive feedback from senior researchers and peers.</p><span
+                class="deadline">Deadline: TBA</span><br><br><a href="cfp-doctoral-consortium.html" class="btn btn-fill"
+                                                                style="font-size:0.75rem;padding:0.5rem 1.2rem;">Read
+            More &rarr;</a></div>
+    </div>
+
 </section>
 
 <section class="keynotes" id="keynotes">
-  <div class="s-eyebrow">Invited Speakers</div>
-  <h2 class="s-title">Keynote Speakers</h2>
-  <p class="s-lead">Confirmed keynote speakers will be announced progressively. Stay tuned.</p>
-  <div class="kn-grid">
-    <div class="kn-card">
-      <!-- <img src="img/speakers/speaker1.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block;" alt="Keynote Speaker 1"> -->
-      <div class="kn-avatar">?</div><div class="kn-name">Speaker TBA</div><div class="kn-affil">Affiliation TBA</div><div class="kn-tba">To be announced</div>
+    <div class="s-eyebrow">Invited Speakers</div>
+    <h2 class="s-title">Keynote Speakers</h2>
+    <p class="s-lead">Confirmed keynote speakers will be announced progressively. Stay tuned.</p>
+    <div class="kn-grid">
+        <div class="kn-card">
+            <!-- <img src="img/speakers/speaker1.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block;" alt="Keynote Speaker 1"> -->
+            <div class="kn-avatar">?</div>
+            <div class="kn-name">Speaker TBA</div>
+            <div class="kn-affil">Affiliation TBA</div>
+            <div class="kn-tba">To be announced</div>
+        </div>
+        <div class="kn-card">
+            <!-- <img src="img/speakers/speaker2.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block;" alt="Keynote Speaker 2"> -->
+            <div class="kn-avatar">?</div>
+            <div class="kn-name">Speaker TBA</div>
+            <div class="kn-affil">Affiliation TBA</div>
+            <div class="kn-tba">To be announced</div>
+        </div>
+        <div class="kn-card">
+            <!-- <img src="img/speakers/speaker3.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block;" alt="Keynote Speaker 3"> -->
+            <div class="kn-avatar">?</div>
+            <div class="kn-name">Speaker TBA</div>
+            <div class="kn-affil">Affiliation TBA</div>
+            <div class="kn-tba">To be announced</div>
+        </div>
     </div>
-    <div class="kn-card">
-      <!-- <img src="img/speakers/speaker2.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block;" alt="Keynote Speaker 2"> -->
-      <div class="kn-avatar">?</div><div class="kn-name">Speaker TBA</div><div class="kn-affil">Affiliation TBA</div><div class="kn-tba">To be announced</div>
-    </div>
-    <div class="kn-card">
-      <!-- <img src="img/speakers/speaker3.jpg" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block;" alt="Keynote Speaker 3"> -->
-      <div class="kn-avatar">?</div><div class="kn-name">Speaker TBA</div><div class="kn-affil">Affiliation TBA</div><div class="kn-tba">To be announced</div>
-    </div>
-  </div>
 </section>
 
 <section id="committee" style="background: var(--paper); padding: 6rem;">
-  <div class="s-eyebrow" style="color:var(--accent);">People</div>
-  <h2 class="s-title">Organizing Committee</h2>
-  <p class="s-lead">A multidisciplinary team committed to a fair, rigorous, and inclusive workshop.</p>
+    <div class="s-eyebrow" style="color:var(--accent);">People</div>
+    <h2 class="s-title">Organizing Committee</h2>
+    <p class="s-lead">A multidisciplinary team committed to a fair, rigorous, and inclusive workshop.</p>
 
-  <!-- GENERAL CHAIRS: full row, big cards like keynotes -->
-  <div style="margin-bottom:3rem;">
-    <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--accent);font-weight:600;margin-bottom:1.5rem;display:flex;align-items:center;gap:0.6rem;">
-      <span style="display:block;width:20px;height:1px;background:var(--accent);"></span>General Chairs
-    </div>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2rem;">
-
-      <div style="text-align:center; padding:2.5rem 2rem; background:white; border:1px solid var(--border); border-radius:4px; transition:all 0.25s;">
-        <img src="img/committee/loduca.jpeg" style="width:250px;height:250px;border-radius:8px;object-fit:cover;margin:0 auto 1.2rem;display:block;" alt="Angelica Lo Duca">
-
-        <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:0.4rem;">Angelica Lo Duca</div>
-        <div style="font-size:0.82rem;color:var(--muted);">IIT-CNR, Italy</div>
-      </div>
-
-      <div style="text-align:center; padding:2.5rem 2rem; background:white; border:1px solid var(--border); border-radius:4px; transition:all 0.25s;">
-        <img src="img/committee/malloci.jpeg" style="width:250px;height:250px;border-radius:8px;object-fit:cover;margin:0 auto 1.2rem;display:block;" alt="Francesca Maridina Malloci">
-        <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:0.4rem;">Francesca Maridina Malloci</div>
-        <div style="font-size:0.82rem;color:var(--muted);">Università di Cagliari, Italy</div>
-      </div>
-
-      <div style="text-align:center; padding:2.5rem 2rem; background:white; border:1px solid var(--border); border-radius:4px; transition:all 0.25s;">
-        <img src="img/committee/rotelli.jpeg" style="width:250px;height:250px;border-radius:8px;object-fit:cover;margin:0 auto 1.2rem;display:block;" alt="Daniela Rotelli">
-        <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:0.4rem;">Daniela Rotelli</div>
-        <div style="font-size:0.82rem;color:var(--muted);">Sorbonne Universit&eacute;, France</div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ALTRI CHAIRS: griglia 3 col, sfondo bianco, titoli più grandi -->
-  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem;">
-
-    <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-      <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">Program Chairs</div>
-
-        <div class="cp"><img src="img/committee/branthome.jpeg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Matthieu Branthôme">
-            <div class="ci"><strong style="color:var(--ink);">Matthieu Branth&ocirc;me</strong><span style="color:var(--muted);">Université de Rennes, France</span></div></div>
-
-      <div class="cp"><img src="img/committee/jolivet.jpg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Sébastien Jolivet">
-        <div class="ci"><strong style="color:var(--ink);">S&eacute;bastien Jolivet</strong><span style="color:var(--muted);">Université de Genève, Suisse</span></div></div>
-
-      <div class="cp"><img src="img/committee/yessad.png" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Amel Yessad">
-        <div class="ci"><strong style="color:var(--ink);">Amel Yessad</strong><span style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div></div>
-
-
-    </div>
-
-    <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-      <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">Equity, Diversity, and Inclusion Chairs</div>
-      <div class="cp"> <img src="img/committee/buzzi.jpg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Marina Buzzi">
-        <div class="ci"><strong style="color:var(--ink);">Marina Buzzi</strong><span style="color:var(--muted);">IIT-CNR, Italy</span></div></div>
-      <div class="cp"><img src="img/committee/leporini.jpeg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Barbara Leporini">
-        <div class="ci"><strong style="color:var(--ink);">Barbara Leporini</strong><span style="color:var(--muted);">Università di Pisa &amp; ISTI-CNR, Italy</span></div></div>
-      <div class="cp"><img src="img/committee/miele.jpeg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Camille Miele">
-        <div class="ci"><strong style="color:var(--ink);">Camille Miele</strong><span style="color:var(--muted);">Université de Montpellier, France</span></div></div>
-    </div>
-
-    <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-      <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">Fairness and Equity Chairs</div>
-      <div class="cp"><img src="img/committee/cock.jpeg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Jade Maï Cock">
-        <div class="ci"><strong style="color:var(--ink);">Jade Ma&iuml; Cock</strong><span style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div></div>
-      <div class="cp"><img src="img/committee/mancini.jpeg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Massimiliano Mancini">
-        <div class="ci"><strong style="color:var(--ink);">Massimiliano Mancini</strong><span style="color:var(--muted);">Università degli Studi di Firenze, Italy</span></div></div>
-        <div class="cp"><img src="img/committee/punzo.png" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Punzo">
-            <div class="ci"><strong style="color:var(--ink);">Veronica Punzo</strong><span style="color:var(--muted);">Scuola Superiore Sant'Anna, Italy</span></div></div>
-        <!--    <div class="cp"><img src="img/committee/verger.png" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Mélina Verger">
-                <div class="ci"><strong style="color:var(--ink);">M&eacute;lina Verger</strong><span style="color:var(--muted);">INSA-Lyon, France</span></div></div>
-        -->
+    <!-- GENERAL CHAIRS: full row, big cards like keynotes -->
+    <div style="margin-bottom:3rem;">
+        <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--accent);font-weight:600;margin-bottom:1.5rem;display:flex;align-items:center;gap:0.6rem;">
+            <span style="display:block;width:20px;height:1px;background:var(--accent);"></span>General Chairs
         </div>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2rem;">
+
+            <div style="text-align:center; padding:2.5rem 2rem; background:white; border:1px solid var(--border); border-radius:4px; transition:all 0.25s;">
+                <img src="img/committee/loduca.jpeg"
+                     style="width:250px;height:250px;border-radius:8px;object-fit:cover;margin:0 auto 1.2rem;display:block;"
+                     alt="Angelica Lo Duca">
+
+                <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:0.4rem;">
+                    Angelica Lo Duca
+                </div>
+                <div style="font-size:0.82rem;color:var(--muted);">IIT-CNR, Italy</div>
+            </div>
+
+            <div style="text-align:center; padding:2.5rem 2rem; background:white; border:1px solid var(--border); border-radius:4px; transition:all 0.25s;">
+                <img src="img/committee/malloci.jpeg"
+                     style="width:250px;height:250px;border-radius:8px;object-fit:cover;margin:0 auto 1.2rem;display:block;"
+                     alt="Francesca Maridina Malloci">
+                <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:0.4rem;">
+                    Francesca Maridina Malloci
+                </div>
+                <div style="font-size:0.82rem;color:var(--muted);">Università di Cagliari, Italy</div>
+            </div>
+
+            <div style="text-align:center; padding:2.5rem 2rem; background:white; border:1px solid var(--border); border-radius:4px; transition:all 0.25s;">
+                <img src="img/committee/rotelli.jpeg"
+                     style="width:250px;height:250px;border-radius:8px;object-fit:cover;margin:0 auto 1.2rem;display:block;"
+                     alt="Daniela Rotelli">
+                <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:0.4rem;">
+                    Daniela Rotelli
+                </div>
+                <div style="font-size:0.82rem;color:var(--muted);">Sorbonne Universit&eacute;, France</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ALTRI CHAIRS: griglia 3 col, sfondo bianco, titoli più grandi -->
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem;">
 
         <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-          <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">Serious Games for Inclusion Chairs</div>
-          <div class="cp"><img src="img/committee/muratet.jpg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Mathieu Muratet">
-              <div class="ci"><strong style="color:var(--ink);">Mathieu Muratet</strong><span style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div></div>
+            <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+                Program Chairs
+            </div>
+
+            <div class="cp"><img src="img/committee/branthome.jpeg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Matthieu Branthôme">
+                <div class="ci"><strong style="color:var(--ink);">Matthieu Branth&ocirc;me</strong><span
+                        style="color:var(--muted);">Université de Rennes, France</span></div>
+            </div>
+
+            <div class="cp"><img src="img/committee/jolivet.jpg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Sébastien Jolivet">
+                <div class="ci"><strong style="color:var(--ink);">S&eacute;bastien Jolivet</strong><span
+                        style="color:var(--muted);">Université de Genève, Suisse</span></div>
+            </div>
+
+            <div class="cp"><img src="img/committee/yessad.png"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Amel Yessad">
+                <div class="ci"><strong style="color:var(--ink);">Amel Yessad</strong><span style="color:var(--muted);">Sorbonne Universit&eacute;, France</span>
+                </div>
+            </div>
+
 
         </div>
 
         <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-          <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">Publicity Chairs</div>
-          <div class="cp"><img src="img/committee/murgia.jpg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Emiliana Murgia">
-            <div class="ci"><strong style="color:var(--ink);">Emiliana Murgia</strong><span style="color:var(--muted);">Università di Foggia, Italy</span></div></div>
-          <div class="cp"><img src="img/committee/costa-cornejo.jpeg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Paola Costa Cornejo">
-            <div class="ci"><strong style="color:var(--ink);">Paola Costa Cornejo</strong><span style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div></div>
+            <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+                Equity, Diversity, and Inclusion Chairs
+            </div>
+            <div class="cp"><img src="img/committee/buzzi.jpg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Marina Buzzi">
+                <div class="ci"><strong style="color:var(--ink);">Marina Buzzi</strong><span
+                        style="color:var(--muted);">IIT-CNR, Italy</span></div>
+            </div>
+            <div class="cp"><img src="img/committee/leporini.jpeg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Barbara Leporini">
+                <div class="ci"><strong style="color:var(--ink);">Barbara Leporini</strong><span
+                        style="color:var(--muted);">Università di Pisa &amp; ISTI-CNR, Italy</span></div>
+            </div>
+            <div class="cp"><img src="img/committee/miele.jpeg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Camille Miele">
+                <div class="ci"><strong style="color:var(--ink);">Camille Miele</strong><span
+                        style="color:var(--muted);">Université de Montpellier, France</span></div>
+            </div>
         </div>
 
         <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-          <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">Doctoral Symposium Chairs</div>
-           <!-- <div class="cp"><img src="img/committee/pierrot.png" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Laëtitia Pierrot">
-                <div class="ci"><strong style="color:var(--ink);">Laëtitia Pierrot</strong><span style="color:var(--muted);">Université Le Mans, France</span></div></div>
-            <div class="cp"><img src="img/committee/solari-landa.jpeg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Melina Solari Landa">
-                <div class="ci"><strong style="color:var(--ink);">Melina Solari Landa</strong><span style="color:var(--muted);">Laboratoire Techné, France</span></div></div>
-        -->
-    </div>
+            <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+                Fairness and Equity Chairs
+            </div>
+            <div class="cp"><img src="img/committee/cock.jpeg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Jade Maï Cock">
+                <div class="ci"><strong style="color:var(--ink);">Jade Ma&iuml; Cock</strong><span
+                        style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
+            </div>
+            <div class="cp"><img src="img/committee/mancini.jpeg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Massimiliano Mancini">
+                <div class="ci"><strong style="color:var(--ink);">Massimiliano Mancini</strong><span
+                        style="color:var(--muted);">Università degli Studi di Firenze, Italy</span></div>
+            </div>
+            <div class="cp"><img src="img/committee/punzo.png"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Punzo">
+                <div class="ci"><strong style="color:var(--ink);">Veronica Punzo</strong><span
+                        style="color:var(--muted);">Scuola Superiore Sant'Anna, Italy</span></div>
+            </div>
+                <div class="cp"><img src="img/committee/verger.png" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Mélina Verger">
+                    <div class="ci"><strong style="color:var(--ink);">M&eacute;lina Verger</strong><span style="color:var(--muted);">INSA-Lyon, France</span></div></div>
+            
+        </div>
 
-    <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-      <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">Proceedings Chairs</div>
-      <div class="cp"><img src="img/committee/khan.jpg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Imran S. A. Khan">
-          <div class="ci"><strong style="color:var(--ink)!important;">Imran S. A. Khan</strong><span style="color:var(--muted)!important;">Université Le Mans, France</span></div></div>
-        <div class="cp"><img src="img/committee/nebel.png" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Léo Nebel">
-            <div class="ci"><strong style="color:var(--ink)!important;">Léo Nebel</strong><span style="color:var(--muted)!important;">Sorbonne Université, France</span></div></div>
-    </div>
+        <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
+            <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+                Serious Games for Inclusion Chairs
+            </div>
+            <div class="cp"><img src="img/committee/muratet.jpg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Mathieu Muratet">
+                <div class="ci"><strong style="color:var(--ink);">Mathieu Muratet</strong><span
+                        style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
+            </div>
 
-    <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-      <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">Web Chair</div>
-      <div class="cp"><img src="img/committee/tocco.jpg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Marco Tocco">
-        <div class="ci"><strong style="color:var(--ink);">Marco Tocco</strong><span style="color:var(--muted);">Università degli Studi di Cagliari, Italy</span></div></div>
-        <div class="cp"><img src="img/committee/thiel.png" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Pierre Thiel">
-            <div class="ci"><strong style="color:var(--ink);">Pierre Thiel</strong><span style="color:var(--muted);">Sorbonne Université, France</span></div></div>
-    </div>
+        </div>
 
-    <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-      <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">Local Organization Chairs</div>
-        <div class="cp"><img src="img/committee/bouchet.jpg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="François Bouchet">
-            <div class="ci"><strong style="color:var(--ink);">Fran&ccedil;ois Bouchet</strong><span style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div></div>
-        <div class="cp"><img src="img/committee/lalle.jpeg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Sébastien Lallé">
-            <div class="ci"><strong style="color:var(--ink);">S&eacute;bastien Lall&eacute;</strong><span style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div></div>
-        <div class="cp"><img src="img/committee/noel.jpeg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Yves Noël">
-            <div class="ci"><strong style="color:var(--ink);">Yves No&euml;l</strong><span style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div></div>
-        <div class="cp"><img src="img/committee/luengo.png" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Vanda Luengo">
-        <div class="ci"><strong style="color:var(--ink);">Vanda Luengo</strong><span style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div></div>
-    </div>
+        <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
+            <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+                Publicity Chairs
+            </div>
+            <div class="cp"><img src="img/committee/murgia.jpg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Emiliana Murgia">
+                <div class="ci"><strong style="color:var(--ink);">Emiliana Murgia</strong><span
+                        style="color:var(--muted);">Università di Foggia, Italy</span></div>
+            </div>
+            <div class="cp"><img src="img/committee/costa-cornejo.jpeg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Paola Costa Cornejo">
+                <div class="ci"><strong style="color:var(--ink);">Paola Costa Cornejo</strong><span
+                        style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
+            </div>
+        </div>
 
-  </div>
+        <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
+            <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+                Doctoral Consortium Chairs
+            </div>
+            <!-- <div class="cp"><img src="img/committee/pierrot.png" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Laëtitia Pierrot">
+                 <div class="ci"><strong style="color:var(--ink);">Laëtitia Pierrot</strong><span style="color:var(--muted);">Université Le Mans, France</span></div></div>
+             <div class="cp"><img src="img/committee/solari-landa.jpeg" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" alt="Melina Solari Landa">
+                 <div class="ci"><strong style="color:var(--ink);">Melina Solari Landa</strong><span style="color:var(--muted);">Laboratoire Techné, France</span></div></div>
+         -->
+        </div>
+
+        <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
+            <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+                Proceedings Chairs
+            </div>
+            <div class="cp"><img src="img/committee/khan.jpg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Imran S. A. Khan">
+                <div class="ci"><strong style="color:var(--ink)!important;">Imran S. A. Khan</strong><span
+                        style="color:var(--muted)!important;">Université Le Mans, France</span></div>
+            </div>
+            <div class="cp"><img src="img/committee/nebel.png"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Léo Nebel">
+                <div class="ci"><strong style="color:var(--ink)!important;">Léo Nebel</strong><span
+                        style="color:var(--muted)!important;">Sorbonne Université, France</span></div>
+            </div>
+            <div class="cp"><img src="img/committee/martin-gomez.jpeg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Francisco Martin-Gomez">
+                <div class="ci"><strong style="color:var(--ink)!important;">Francisco Martin-Gomez</strong><span
+                        style="color:var(--muted)!important;">Université de Toulouse, France</span></div>
+            </div>
+        </div>
+
+        <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
+            <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+                Web Chair
+            </div>
+            <div class="cp"><img src="img/committee/tocco.jpg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Marco Tocco">
+                <div class="ci"><strong style="color:var(--ink);">Marco Tocco</strong><span style="color:var(--muted);">Università degli Studi di Cagliari, Italy</span>
+                </div>
+            </div>
+            <div class="cp"><img src="img/committee/thiel.png"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Pierre Thiel">
+                <div class="ci"><strong style="color:var(--ink);">Pierre Thiel</strong><span
+                        style="color:var(--muted);">Sorbonne Université, France</span></div>
+            </div>
+        </div>
+
+        <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
+            <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+                Local Organization Chairs
+            </div>
+            <div class="cp"><img src="img/committee/bouchet.jpg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="François Bouchet">
+                <div class="ci"><strong style="color:var(--ink);">Fran&ccedil;ois Bouchet</strong><span
+                        style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
+            </div>
+            <div class="cp"><img src="img/committee/lalle.jpeg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Sébastien Lallé">
+                <div class="ci"><strong style="color:var(--ink);">S&eacute;bastien Lall&eacute;</strong><span
+                        style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
+            </div>
+            <div class="cp"><img src="img/committee/noel.jpeg"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Yves Noël">
+                <div class="ci"><strong style="color:var(--ink);">Yves No&euml;l</strong><span
+                        style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
+            </div>
+            <div class="cp"><img src="img/committee/luengo.png"
+                                 style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                 alt="Vanda Luengo">
+                <div class="ci"><strong style="color:var(--ink);">Vanda Luengo</strong><span
+                        style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <section style="background: white; padding: 4rem 6rem; border-top: 1px solid var(--border);">
-  <div class="s-eyebrow">Organizing Institutions</div>
-  <div style="display:flex; align-items:center; gap:3rem; flex-wrap:wrap;">
-    <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
-      <img src="img/organizers/SU_logo.png" alt="Sorbonne" style="height:60px;object-fit:contain;">
-      <span style="font-size:0.75rem;color:var(--muted);">Sorbonne Universit&eacute;</span>
+    <div class="s-eyebrow">Organizing Institutions</div>
+    <div style="display:flex; align-items:center; gap:3rem; flex-wrap:wrap;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
+            <img src="img/organizers/SU_logo.png" alt="Sorbonne" style="height:60px;object-fit:contain;">
+        </div>
+
+        <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
+            <img src="img/organizers/CNRS_logo.png" alt="CNRS" style="height:60px;object-fit:contain;">
+        </div>
+
+        <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
+            <img src="img/organizers/LogoLIP6.png" alt="LIP6" style="height:60px;object-fit:contain;">
+        </div>
     </div>
-    <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
-      <img src="img/organizers/LIP6_logo.jpg" alt="Sponsor" style="height:60px;object-fit:contain;">
-      <span style="font-size:0.75rem;color:var(--muted);">LIP6</span>
-    </div>
-  </div>
 </section>
 
 <footer>
-  <div>
-    <div class="f-logo">WAILS<span>.</span>2026</div>
-    <div style="margin-top:0.4rem">3rd Workshop on AI with and for Learning Sciences &middot; Paris, 9&ndash;11 December 2026</div>
-  </div>
-  <div class="f-links">
-    <a href="https://wailsworkshop.github.io/2025/" target="_blank">WAILS 2025 &nearr;</a>
-    <a href="https://wailsworkshop.github.io/2024/" target="_blank">WAILS 2024 &nearr;</a>
-    <a href="/cdn-cgi/l/email-protection#bfc8ded6d3ccc8d0cdd4ccd7d0cfffd0cacbd3d0d0d491dcd0d2">Contact</a>
-  </div>
+    <div>
+        <div class="f-logo">WAILS<span>.</span>2026</div>
+        <div style="margin-top:0.4rem">3rd Workshop on AI with and for Learning Sciences &middot; Paris, 9&ndash;11
+            December 2026
+        </div>
+    </div>
+    <div class="f-links">
+        <a href="https://wailsworkshop.github.io/2025/" target="_blank">WAILS 2025 &nearr;</a>
+        <a href="https://wailsworkshop.github.io/2024/" target="_blank">WAILS 2024 &nearr;</a>
+        <a href="/cdn-cgi/l/email-protection#bfc8ded6d3ccc8d0cdd4ccd7d0cfffd0cacbd3d0d0d491dcd0d2">Contact</a>
+    </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./js/countdown.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="./js/countdown.js"></script>
 <script src="./js/slider.js"></script>
 <script>
-(function() {
-  var t = new Date(2026, 11, 9, 9, 0, 0);
-  function tick() {
-    var diff = t - new Date();
-    if (diff < 0) diff = 0;
-    var el = document.getElementById.bind(document);
-    if (el("cd-d")) el("cd-d").textContent = String(Math.floor(diff/86400000)).padStart(3,"0");
-    if (el("cd-h")) el("cd-h").textContent = String(Math.floor(diff%86400000/3600000)).padStart(2,"0");
-    if (el("cd-m")) el("cd-m").textContent = String(Math.floor(diff%3600000/60000)).padStart(2,"0");
-    if (el("cd-s")) el("cd-s").textContent = String(Math.floor(diff%60000/1000)).padStart(2,"0");
-  }
-  tick(); setInterval(tick, 1000);
-  var slides = document.querySelectorAll('.hero-slider img');
-  var caption = document.getElementById('slider-caption');
-  if (slides.length) {
-    var cur = 0;
-    slides[0].classList.add('active');
-    if (caption) caption.textContent = slides[0].getAttribute('data-credit') || '';
-    setInterval(function() {
-      slides[cur].classList.remove('active');
-      cur = (cur + 1) % slides.length;
-      slides[cur].classL
+    (function () {
+        var t = new Date(2026, 11, 9, 9, 0, 0);
+
+        function tick() {
+            var diff = t - new Date();
+            if (diff < 0) diff = 0;
+            var el = document.getElementById.bind(document);
+            if (el("cd-d")) el("cd-d").textContent = String(Math.floor(diff / 86400000)).padStart(3, "0");
+            if (el("cd-h")) el("cd-h").textContent = String(Math.floor(diff % 86400000 / 3600000)).padStart(2, "0");
+            if (el("cd-m")) el("cd-m").textContent = String(Math.floor(diff % 3600000 / 60000)).padStart(2, "0");
+            if (el("cd-s")) el("cd-s").textContent = String(Math.floor(diff % 60000 / 1000)).padStart(2, "0");
+        }
+
+        tick();
+        setInterval(tick, 1000);
+        var slides = document.querySelectorAll('.hero-slider img');
+        var caption = document.getElementById('slider-caption');
+        if (slides.length) {
+            var cur = 0;
+            slides[0].classList.add('active');
+            if (caption) caption.textContent = slides[0].getAttribute('data-credit') || '';
+            setInterval(function () {
+                slides[cur].classList.remove('active');
+                cur = (cur + 1) % slides.length;
+                slides[cur].classL

@@ -7,28 +7,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<style>
-  .cfp-page { padding-top: 72px; }
-  .cfp-hero { background: var(--ink); color: white; padding: 6rem; }
-  .cfp-hero .s-eyebrow { color: var(--accent); }
-  .cfp-hero .s-eyebrow::before { background: var(--accent); }
-  .cfp-hero h1 { font-family: "Playfair Display", serif; font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.2rem; }
-  .cfp-hero h1 em { color: var(--accent); font-style: italic; }
-  .cfp-hero p { color: rgba(255,255,255,0.6); max-width: 600px; font-size: 1.05rem; line-height: 1.75; font-weight: 300; }
-  .cfp-body { background: white; padding: 5rem 6rem; }
-  .cfp-body h2 { font-family: "Playfair Display", serif; font-size: 1.6rem; font-weight: 700; margin: 2.5rem 0 0.8rem; color: var(--ink); }
-  .cfp-body h2:first-child { margin-top: 0; }
-  .cfp-body p { color: var(--muted); font-size: 0.98rem; line-height: 1.8; margin-bottom: 1rem; }
-  .cfp-body ul { color: var(--muted); font-size: 0.98rem; line-height: 1.8; padding-left: 1.5rem; margin-bottom: 1.5rem; }
-  .cfp-body ul li { margin-bottom: 0.4rem; }
-  .cfp-body strong { color: var(--ink); font-weight: 600; }
-  .dates-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 2rem 0; }
-  .date-card { border: 1px solid var(--border); padding: 1.5rem; border-left: 3px solid var(--accent); border-radius: 2px; }
-  .date-card .date-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 600; margin-bottom: 0.4rem; }
-  .date-card .date-value { font-family: "Playfair Display", serif; font-size: 1.1rem; font-weight: 700; color: var(--ink); }
-  .back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent); text-decoration: none; font-size: 0.82rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3rem; }
-  .back-link:hover { color: var(--accent-dark); }
-</style>
 </head>
 <body>
 <nav>
@@ -41,6 +19,20 @@
     <li><a href="index.html#cfp">Call for Papers</a></li>
     <li><a href="index.html#keynotes">Keynotes</a></li>
     <li><a href="index.html#committee">Committee</a></li>
+    <li class="has-dropdown">
+      <a href="#">Attend</a>
+      <div class="dropdown"><div class="dropdown-inner">
+        <a href="attend-registration.html">Registration</a>
+        <a href="attend-travel.html">Travel Information</a>
+      </div></div>
+    </li>
+    <li class="has-dropdown">
+      <a href="#">Schedule</a>
+      <div class="dropdown"><div class="dropdown-inner">
+        <a href="schedule-programme.html">Programme</a>
+        <a href="schedule-accepted-papers.html">Accepted Papers</a>
+      </div></div>
+    </li>
     <li><a href="index.html#cfp" class="nav-cta">Submit</a></li>
   </ul>
 </nav>
@@ -54,42 +46,29 @@
     <a href="index.html#cfp" class="back-link">&larr; Back to Call for Papers</a>
 
     <h2>Overview</h2>
-    <p>Full papers should present completed research with substantial empirical or theoretical contributions. Submissions must be original work not currently under review elsewhere.</p>
-
-    <h2>Topics of Interest</h2>
-    <p>We welcome contributions on (but not limited to) the following topics:</p>
-    <ul>
-      <li>Responsible and ethical AI in educational systems</li>
-      <li>Explainability and transparency of AI-based learning tools</li>
-      <li>Fairness, bias detection and mitigation in adaptive learning</li>
-      <li>Human-centered AI design for education</li>
-      <li>AI governance and policy frameworks for education</li>
-      <li>Intelligent tutoring systems and conversational agents</li>
-      <li>Learning analytics and educational data mining</li>
-      <li>AI for accessibility and inclusive education</li>
-      <li>Serious games and game-based learning with AI</li>
-      <li>Large language models in educational contexts</li>
-    </ul>
+    <p>Full papers should present original, mature, and unpublished research that makes a significant contribution to the field of AI in education. Submissions must not be currently under review elsewhere.</p>
 
     <h2>Submission Format</h2>
-    <p>Papers must be written in English and formatted according to the <strong>Springer LNCS style</strong>. Full papers are limited to <strong>12 pages</strong> excluding references. Submissions must be anonymized for double-blind review.</p>
-    <p>Please submit via <strong>CMT</strong> (link TBA).</p>
+    <p>Papers must be written in English and formatted according to the <strong>Springer LNCS style</strong>. Full papers are limited to <strong>12 pages</strong> excluding references.</p>
+    <p>Submissions must be <strong>anonymized</strong> for double-blind review. Author names, affiliations, and any self-identifying references must be removed from the manuscript.</p>
+    <p>Each submission will be reviewed by at least <strong>3 members</strong> of the Program Committee. Papers will be evaluated on the basis of originality, significance, technical quality, and clarity of presentation.</p>
+    <p>Please submit via <a href="https://cmt3.research.microsoft.com/WAILS2026" target="_blank"><strong>CMT</strong></a> — select the <strong>WAILS 2026 Full and Short Papers</strong> track at submission.</p>
 
     <h2>Important Dates</h2>
     <div class="dates-grid">
-      <div class="date-card"><div class="date-label">Submission Deadline</div><div class="date-value">TBA</div></div>
+      <div class="date-card"><div class="date-label">Submission Deadline</div><div class="date-value">17 July 2026</div></div>
       <div class="date-card"><div class="date-label">Notification of Acceptance</div><div class="date-value">TBA</div></div>
       <div class="date-card"><div class="date-label">Camera-Ready</div><div class="date-value">TBA</div></div>
-      <div class="date-card"><div class="date-label">Workshop</div><div class="date-value">9–11 December 2026</div></div>
+      <div class="date-card"><div class="date-label">Workshop</div><div class="date-value">9&ndash;11 December 2026</div></div>
     </div>
 
     <h2>Publication</h2>
     <p>Accepted papers will be published by <strong>Springer</strong> in the <strong>Lecture Notes in Computer Science (LNCS)</strong> series and indexed in DBLP, Google Scholar, and Scopus.</p>
 
-  <h2> Acknowledgements</h2>
-      <p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
-
+    <h2>Acknowledgements</h2>
+    <p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
   </div>
+</div>
 <footer>
   <div>
     <div class="f-logo">WAILS<span>.</span>2026</div>
@@ -101,6 +80,5 @@
     <a href="mailto:wailsworkshop@outlook.com">Contact</a>
   </div>
 </footer>
-</div>
 </body>
 </html>
