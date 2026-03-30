@@ -67,12 +67,33 @@
   .about { background: white; }
   .about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 5rem; align-items: start; }
   .about-body { color: var(--muted); font-size: 0.95rem; line-height: 1.8; margin-bottom: 2rem; }
-  .themes { display: flex; flex-direction: column; gap: 1.2rem; margin-top: 1rem; }
-  .theme { border: 1px solid var(--border); padding: 1.2rem 1.4rem; border-left: 3px solid var(--accent); border-radius: 2px; transition: box-shadow 0.2s; }
-  .theme:nth-child(even) { border-left-color: var(--accent2); }
-  .theme:hover { box-shadow: 0 4px 18px rgba(0,0,0,0.06); }
-  .theme h4 { font-family: "Playfair Display", serif; font-size: 0.95rem; margin-bottom: 0.3rem; font-weight: 700; }
-  .theme p { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+.themes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;    /* era probabilmente 1.2rem */
+    margin-top: 0.5rem;
+}
+
+.theme {
+    border: 1px solid var(--border);
+    padding: 0.8rem 1.1rem;    /* era probabilmente 1.2rem 1.4rem */
+    border-left: 3px solid var(--accent);
+    border-radius: 2px;
+    transition: box-shadow 0.2s;
+}
+
+.theme h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 0.9rem;    /* leggermente ridotto */
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+}
+
+.theme p {
+    font-size: 0.78rem;    /* leggermente ridotto */
+    color: var(--muted);
+    line-height: 1.45;
+}
 
   .cfp { background: var(--paper); }
   .cfp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
@@ -319,4 +340,8 @@
     color: var(--muted);
     line-height: 1.6;
     margin-bottom: 0.35rem;
+}
+
+section, .countdown {
+    scroll-margin-top: 72px;
 }
