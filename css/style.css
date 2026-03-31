@@ -34,7 +34,7 @@
   .eyebrow::before { content: ""; display: block; width: 28px; height: 1px; background: var(--accent); }
   .hero-title { font-family: "Playfair Display", serif; font-size: clamp(3.5rem, 5.5vw, 6rem); font-weight: 900; line-height: 1; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
   .hero-title em { color: var(--accent); font-style: italic; }
-  .hero-sub { font-size: 1rem; color: var(--muted); max-width: 420px; margin-bottom: 2.5rem; font-weight: 300; line-height: 1.75; }
+  .hero-sub { font-size: 1rem; color: var(--muted); max-width: 600px; margin-bottom: 2.5rem; font-weight: 300; line-height: 1.75; }
   .hero-meta { display: flex; gap: 2.5rem; margin-bottom: 3rem; flex-wrap: wrap; }
   .meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
   .meta-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); font-weight: 500; }
@@ -104,7 +104,7 @@
   .cfp-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.65; margin-bottom: 1.2rem; }
   .deadline { display: inline-block; font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); border: 1px solid var(--accent); padding: 0.3rem 0.7rem; border-radius: 2px; }
 
-  .keynotes { background: white; }
+.keynotes { background: var(--paper); }
   .kn-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
   .kn-card { padding: 2rem 1.5rem; border: 1px solid var(--border); border-radius: 2px; text-align: center; transition: all 0.25s; }
   .kn-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.07); }
