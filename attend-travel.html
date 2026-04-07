@@ -39,7 +39,7 @@
             education.</p>
 
 
-        <h2>Paris</h2>
+        <h2 style="margin-bottom:0.5rem;">Paris</h2>
         <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:4px; margin-bottom:1rem;">
             <iframe id="paris-video"
                     src="https://www.youtube-nocookie.com/embed/YPMOce2VdKQ?playlist=YPMOce2VdKQ&autoplay=1&loop=1&mute=1"
@@ -51,21 +51,10 @@
             <div style="position:absolute; top:0; left:0; right:0; height:55px; background:white;"></div>
             <div style="position:absolute; bottom:0; left:0; right:0; height:55px; background:white;"></div>
         </div>
-        <button onclick="toggleMute()" id="mute-btn" class="btn btn-ghost" style="margin-bottom:0.2rem;">Enable audio
+        <button onclick="toggleMute()" id="mute-btn" class="btn btn-ghost" style="margin-bottom:1.5rem;">Enable audio
         </button>
 
-        <script>
-            var muted = true;
-
-            function toggleMute() {
-                var iframe = document.getElementById('paris-video');
-                var btn = document.getElementById('mute-btn');
-                muted = !muted;
-                var muteParam = muted ? '&mute=1' : '&mute=0';
-                iframe.src = iframe.src.replace(/&mute=[01]/, muteParam);
-                btn.textContent = muted ? 'Enable audio' : 'Disable audio';
-            }
-        </script>
+        <script src="assets/video.js"></script>
 
 
         <h2>Getting to Paris</h2>
