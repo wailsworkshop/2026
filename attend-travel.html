@@ -1,53 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Travel Information – WAILS 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Information – WAILS 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
 
-
 <div class="cfp-page">
-  <div class="cfp-hero">
-    <div class="s-eyebrow">Attend</div>
-    <h1>Travel <em>Information</em></h1>
-    <p>Practical information on how to get to Paris and the workshop venue.</p>
-  </div>
-  <div class="cfp-body">
-      <h2>Paris</h2>
-      <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:4px; margin-bottom:1rem;">
-          <iframe id="paris-video"
-                  src="https://www.youtube-nocookie.com/embed/YPMOce2VdKQ?playlist=YPMOce2VdKQ&autoplay=1&loop=1&mute=1"
-                  style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  title="Paris">
-          </iframe>
-          <div style="position:absolute; top:0; left:0; right:0; height:55px; background:white;"></div>
-          <div style="position:absolute; bottom:0; left:0; right:0; height:55px; background:white;"></div>
-      </div>
-      <button onclick="toggleMute()" id="mute-btn" class="btn btn-ghost" style="margin-bottom:2rem;">🔇 Enable audio</button>
-
-      <script>
-          var muted = true;
-          function toggleMute() {
-              var iframe = document.getElementById('paris-video');
-              var btn = document.getElementById('mute-btn');
-              muted = !muted;
-              var muteParam = muted ? '&mute=1' : '&mute=0';
-              iframe.src = iframe.src.replace(/&mute=[01]/, muteParam);
-              btn.textContent = muted ? 'Enable audio' : 'Disable audio';
-          }
-      </script>
-    <div class="tba">
-      &#9200; This page will be updated soon. Please check back later.
+    <div class="cfp-hero">
+        <div class="s-eyebrow">Attend</div>
+        <h1>Travel <em>Information</em></h1>
+        <p>Practical information on how to get to Paris and the workshop venue.</p>
     </div>
-  </div>
+    <div class="cfp-body">
+
+        <h2>Venue & Destination"</h2>
+
+        <h3>Paris</h3>
+        <p>Paris, the capital of France, is one of the world's most iconic cities, a place where history, culture, and
+            intellectual life converge. Home to world-renowned museums, grand boulevards, and a vibrant academic scene,
+            Paris offers an unparalleled setting for an international workshop. In December, the city takes on a special
+            charm, with its illuminated streets and festive atmosphere inviting visitors to explore its many
+            neighbourhoods, from the Latin Quarter to Montmartre.</p>
+
+        <h3>Sorbonne Université Sciences et Ingénierie</h3>
+        <p>WAILS 2026 will be hosted at <strong>Sorbonne Université Sciences et Ingénierie</strong>, one of France's
+            leading research universities and a founding member of the Sorbonne family of institutions. Located in the
+            heart of Paris on the historic <em>Campus Pierre et Marie Curie</em>, the Faculty of Sciences brings
+            together researchers from mathematics, physics, chemistry, biology, computer science, and engineering. Its
+            long tradition of scientific excellence, rooted in the legacy of Marie Curie, Pierre Curie, and many other
+            pioneers, makes it an inspiring venue for a workshop at the intersection of artificial intelligence and
+            education.</p>
+
+
+        <h2>Paris</h2>
+        <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:4px; margin-bottom:1rem;">
+            <iframe id="paris-video"
+                    src="https://www.youtube-nocookie.com/embed/YPMOce2VdKQ?playlist=YPMOce2VdKQ&autoplay=1&loop=1&mute=1"
+                    style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    title="Paris">
+            </iframe>
+            <div style="position:absolute; top:0; left:0; right:0; height:55px; background:white;"></div>
+            <div style="position:absolute; bottom:0; left:0; right:0; height:55px; background:white;"></div>
+        </div>
+        <button onclick="toggleMute()" id="mute-btn" class="btn btn-ghost" style="margin-bottom:0.2rem;">Enable audio
+        </button>
+
+        <script>
+            var muted = true;
+
+            function toggleMute() {
+                var iframe = document.getElementById('paris-video');
+                var btn = document.getElementById('mute-btn');
+                muted = !muted;
+                var muteParam = muted ? '&mute=1' : '&mute=0';
+                iframe.src = iframe.src.replace(/&mute=[01]/, muteParam);
+                btn.textContent = muted ? 'Enable audio' : 'Disable audio';
+            }
+        </script>
+
+
+        <h2>Getting to Paris</h2>
+
+        <h3>By Plane</h3>
+        <p>Paris is served by two main international airports. <strong>Charles de Gaulle Airport (CDG)</strong> is the
+            largest and best connected, with direct flights from most major cities worldwide. <strong>Orly Airport
+                (ORY)</strong> serves mainly European and domestic destinations. Both airports are well connected to the
+            city centre by public transport.</p>
+
+        <h3>From the Airport to the City</h3>
+
+        <p>From <strong>CDG</strong>, take the <strong>RER B</strong> train to central Paris (approximately 35 minutes),
+            then change to <strong>Metro M7</strong> at the station <em>Châtelet–Les
+                Halles</em> to reach <em>Jussieu</em>.
+            <br>From
+            <strong>Orly</strong>, take the <strong>Metro M14</strong>, then change to <strong>Metro M7</strong> at the
+            station <em>Maison Blanche</em> and exit at <em>Jussieu</em>.</p>
+
+
+        <h3>Getting to the Campus</h3>
+        <p>The campus Pierre et Marie Curie is located at <strong>4 place Jussieu, 75005 Paris</strong>, in the 5th
+            arrondissement. It is easily accessible by public transport:</p>
+        <ul>
+            <li><strong>Metro:</strong> Line 7 or Line 10, station <em>Jussieu</em> (direct access to the campus)</li>
+            <li><strong>Bus:</strong> Lines 67, 86, 87, 89 — stop <em>Jussieu</em></li>
+            <li><strong>RER:</strong> Line C, station <em>Gare d'Austerlitz</em> (10 minutes on foot)</li>
+        </ul>
+
+        <h3>By Train</h3>
+        <p><strong>SNCF</strong> services
+            connect Brussels, Amsterdam, Lyon, Marseille, and many other destinations. All major Paris train stations
+            (Gare du Nord, Gare de Lyon, Gare Montparnasse) are well connected to the campus by metro.</p>
+
+        <h3>Accommodation</h3>
+        <p>The campus is surrounded by a wide range of accommodation options in the 5th and 6th arrondissements (Latin
+            Quarter), within walking distance or a short metro ride. We recommend booking early, as Paris can be busy in
+            December. A list of suggested hotels will be published here soon.</p>
+    </div>
 </div>
 
 <script src="assets/nav.js"></script>
