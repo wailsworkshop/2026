@@ -1,7 +1,7 @@
 const nav = `
 <nav>
   <a class="nav-logo" href="index.html">
-    WAILS<span>.</span>2026
+  <img src="img/logo/logo.png" alt="WAILS 2026" style="height:52px;">
   </a>
   <ul class="nav-links">
     <li><a href="index.html#about">About</a></li>
