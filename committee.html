@@ -19,65 +19,65 @@
         <h1>Organizing <em>Committee</em></h1>
         <p>A multidisciplinary team committed to a fair, rigorous, and inclusive workshop.</p>
     </div>
-    <div style="background:var(--paper); padding:4rem 6rem;">
+    <div class="committee-page-body">
         <!-- GENERAL CHAIRS: full row, big cards like keynotes -->
         <div style="margin-bottom:3rem;">
-            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--accent);font-weight:600;margin-bottom:1.5rem;display:flex;align-items:center;gap:0.6rem;">
-                <span style="display:block;width:20px;height:1px;background:var(--accent);"></span>General Chairs
+            <div class="committee-label">
+                <span style="display:none"></span>General Chairs
             </div>
-            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2rem;">
+            <div class="general-chairs-grid">
 
-                <div style="text-align:center; padding:2.5rem 2rem; background:white; border:1px solid var(--border); border-radius:4px; transition:all 0.25s;">
+                <div class="general-chair-card">
                     <img src="img/committee/loduca.jpeg"
-                         style="width:250px;height:250px;border-radius:8px;object-fit:cover;margin:0 auto 1.2rem;display:block;"
+                         class="general-chair-photo"
                          alt="Angelica Lo Duca">
 
-                    <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:0.4rem;">
+                    <div class="general-chair-name">
                         Angelica Lo Duca
                     </div>
-                    <div style="font-size:0.82rem;color:var(--muted);">IIT-CNR, Italy</div>
+                    <div class="general-chair-affil">IIT-CNR, Italy</div>
                 </div>
 
-                <div style="text-align:center; padding:2.5rem 2rem; background:white; border:1px solid var(--border); border-radius:4px; transition:all 0.25s;">
+                <div class="general-chair-card">
                     <img src="img/committee/malloci.jpeg"
-                         style="width:250px;height:250px;border-radius:8px;object-fit:cover;margin:0 auto 1.2rem;display:block;"
+                         class="general-chair-photo"
                          alt="Francesca Maridina Malloci">
-                    <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:0.4rem;">
+                    <div class="general-chair-name">
                         Francesca Maridina Malloci
                     </div>
-                    <div style="font-size:0.82rem;color:var(--muted);">Università di Cagliari, Italy</div>
+                    <div class="general-chair-affil">Università di Cagliari, Italy</div>
                 </div>
 
-                <div style="text-align:center; padding:2.5rem 2rem; background:white; border:1px solid var(--border); border-radius:4px; transition:all 0.25s;">
+                <div class="general-chair-card">
                     <img src="img/committee/rotelli.jpeg"
-                         style="width:250px;height:250px;border-radius:8px;object-fit:cover;margin:0 auto 1.2rem;display:block;"
+                         class="general-chair-photo"
                          alt="Daniela Rotelli">
-                    <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;margin-bottom:0.4rem;">
+                    <div class="general-chair-name">
                         Daniela Rotelli
                     </div>
-                    <div style="font-size:0.82rem;color:var(--muted);">Sorbonne Universit&eacute;, France</div>
+                    <div class="general-chair-affil">Sorbonne Universit&eacute;, France</div>
                 </div>
 
             </div>
         </div>
 
         <!-- ALTRI CHAIRS -->
-        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem;">
+        <div class="other-chairs-grid">
 
-            <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-                <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+            <div class="chair-group">
+                <div class="chair-group-title">
                     Program Chairs
                 </div>
 
                 <div class="cp"><img src="img/committee/branthome.jpeg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Matthieu Branthôme">
                     <div class="ci"><strong style="color:var(--ink);">Matthieu Branth&ocirc;me</strong><span
                             style="color:var(--muted);">Université de Rennes, France</span></div>
                 </div>
 
                 <div class="cp"><img src="img/committee/jolivet.jpg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Sébastien Jolivet">
                     <div class="ci"><strong style="color:var(--ink);">S&eacute;bastien Jolivet</strong><span
                             style="color:var(--muted);">Université de Genève, Suisse</span></div>
@@ -86,12 +86,12 @@
 
             </div>
 
-            <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-                <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+            <div class="chair-group">
+                <div class="chair-group-title">
                     Doctoral Consortium Chairs
                 </div>
                 <div class="cp"><img src="img/committee/bouchet.jpg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="François Bouchet">
                     <div class="ci"><strong style="color:var(--ink);">Fran&ccedil;ois Bouchet</strong><span
                             style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
@@ -99,13 +99,13 @@
 
 
                 <div class="cp"><img src="img/committee/pierrot.png"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Laëtitia Pierrot">
                     <div class="ci"><strong style="color:var(--ink);">Laëtitia Pierrot</strong><span
                             style="color:var(--muted);">Université Le Mans, France</span></div>
                 </div>
                 <div class="cp"><img src="img/committee/yessad.png"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Amel Yessad">
                     <div class="ci"><strong style="color:var(--ink);">Amel Yessad</strong><span
                             style="color:var(--muted);">Sorbonne Universit&eacute;, France</span>
@@ -113,26 +113,26 @@
                 </div>
             </div>
 
-            <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-                <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+            <div class="chair-group">
+                <div class="chair-group-title">
                     Local Organization Chairs
                 </div>
                 <div class="cp"><img src="img/committee/lalle.jpeg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Sébastien Lallé">
                     <div class="ci"><strong style="color:var(--ink);">S&eacute;bastien Lall&eacute;</strong><span
                             style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
                 </div>
 
                 <div class="cp"><img src="img/committee/luengo.png"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Vanda Luengo">
                     <div class="ci"><strong style="color:var(--ink);">Vanda Luengo</strong><span
                             style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
                 </div>
 
                 <div class="cp"><img src="img/committee/noel.jpeg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Yves Noël">
                     <div class="ci"><strong style="color:var(--ink);">Yves No&euml;l</strong><span
                             style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
@@ -140,60 +140,60 @@
 
             </div>
 
-            <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-                <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+            <div class="chair-group">
+                <div class="chair-group-title">
                     Equity, Diversity, Inclusion Chairs
                 </div>
                 <div class="cp"><img src="img/committee/buzzi.jpg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Marina Buzzi">
                     <div class="ci"><strong style="color:var(--ink);">Marina Buzzi</strong><span
                             style="color:var(--muted);">IIT-CNR, Italy</span></div>
                 </div>
                 <div class="cp"><img src="img/committee/epstein.jpg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Muriel Epstein">
                     <div class="ci"><strong style="color:var(--ink);">Muriel Epstein</strong><span
                             style="color:var(--muted);">Cergy Paris Université, France</span></div>
                 </div>
                 <div class="cp"><img src="img/committee/leporini.jpeg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Barbara Leporini">
                     <div class="ci"><strong style="color:var(--ink);">Barbara Leporini</strong><span
                             style="color:var(--muted);">Università di Pisa &amp; ISTI-CNR, Italy</span></div>
                 </div>
                 <div class="cp"><img src="img/committee/miele.jpeg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Camille Miele">
                     <div class="ci"><strong style="color:var(--ink);">Camille Miele</strong><span
                             style="color:var(--muted);">Université de Montpellier, France</span></div>
                 </div>
             </div>
 
-            <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-                <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+            <div class="chair-group">
+                <div class="chair-group-title">
                     Ethics & Fairness Chairs
                 </div>
                 <div class="cp"><img src="img/committee/cock.jpeg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Jade Maï Cock">
                     <div class="ci"><strong style="color:var(--ink);">Jade Ma&iuml; Cock</strong><span
                             style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
                 </div>
                 <div class="cp"><img src="img/committee/mancini.jpeg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Massimiliano Mancini">
                     <div class="ci"><strong style="color:var(--ink);">Massimiliano Mancini</strong><span
                             style="color:var(--muted);">Università degli Studi di Firenze, Italy</span></div>
                 </div>
                 <div class="cp"><img src="img/committee/punzo.png"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Punzo">
                     <div class="ci"><strong style="color:var(--ink);">Veronica Punzo</strong><span
                             style="color:var(--muted);">Scuola Superiore Sant'Anna, Italy</span></div>
                 </div>
                 <div class="cp"><img src="img/committee/verger.png"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Mélina Verger">
                     <div class="ci"><strong style="color:var(--ink);">M&eacute;lina Verger</strong><span
                             style="color:var(--muted);">INSA-Lyon, France</span></div>
@@ -201,12 +201,12 @@
 
             </div>
 
-            <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-                <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+            <div class="chair-group">
+                <div class="chair-group-title">
                     Serious Games for Inclusion Chairs
                 </div>
                 <div class="cp"><img src="img/committee/muratet.jpg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Mathieu Muratet">
                     <div class="ci"><strong style="color:var(--ink);">Mathieu Muratet</strong><span
                             style="color:var(--muted);">INSEI, France</span></div>
@@ -214,18 +214,18 @@
 
             </div>
 
-            <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-                <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+            <div class="chair-group">
+                <div class="chair-group-title">
                     Publicity Chairs
                 </div>
                 <div class="cp"><img src="img/committee/murgia.jpg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Emiliana Murgia">
                     <div class="ci"><strong style="color:var(--ink);">Emiliana Murgia</strong><span
                             style="color:var(--muted);">Università di Foggia, Italy</span></div>
                 </div>
                 <div class="cp"><img src="img/committee/costa-cornejo.jpeg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Paola Costa Cornejo">
                     <div class="ci"><strong style="color:var(--ink);">Paola Costa Cornejo</strong><span
                             style="color:var(--muted);">Sorbonne Universit&eacute;, France</span></div>
@@ -233,49 +233,49 @@
             </div>
 
 
-            <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-                <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+            <div class="chair-group">
+                <div class="chair-group-title">
                     Proceedings Chairs
                 </div>
                 <div class="cp"><img src="img/committee/ferraioli.jpeg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Valentina Ferraioli">
                     <div class="ci"><strong style="color:var(--ink)!important;">Valentina Ferraioli</strong><span
                             style="color:var(--muted)!important;">EPFL, Suisse</span></div>
                 </div>
                 <div class="cp"><img src="img/committee/khan.jpg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Imran S. A. Khan">
                     <div class="ci"><strong style="color:var(--ink)!important;">Imran S. A. Khan</strong><span
                             style="color:var(--muted)!important;">Université Le Mans, France</span></div>
                 </div>
                 <div class="cp"><img src="img/committee/nebel.png"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Léo Nebel">
                     <div class="ci"><strong style="color:var(--ink)!important;">Léo Nebel</strong><span
                             style="color:var(--muted)!important;">Sorbonne Université, France</span></div>
                 </div>
                 <div class="cp"><img src="img/committee/martin-gomez.jpeg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Francisco Martin-Gomez">
                     <div class="ci"><strong style="color:var(--ink)!important;">Francisco Martin-Gomez</strong><span
                             style="color:var(--muted)!important;">Université de Toulouse, France</span></div>
                 </div>
             </div>
 
-            <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2rem; border-top:3px solid var(--accent);">
-                <div style="font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent);font-weight:700;margin-bottom:1.4rem;padding-bottom:0.7rem;border-bottom:2px solid var(--accent);">
+            <div class="chair-group">
+                <div class="chair-group-title">
                     Web Chair
                 </div>
                 <div class="cp"><img src="img/committee/tocco.jpg"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Marco Tocco">
                     <div class="ci"><strong style="color:var(--ink);">Marco Tocco</strong><span
                             style="color:var(--muted);">Università degli Studi di Cagliari, Italy</span>
                     </div>
                 </div>
                 <div class="cp"><img src="img/committee/thiel.png"
-                                     style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+                                     class="chair-member-img"
                                      alt="Pierre Thiel">
                     <div class="ci"><strong style="color:var(--ink);">Pierre Thiel</strong><span
                             style="color:var(--muted);">Sorbonne Université, France</span></div>
@@ -286,19 +286,19 @@
         </div>
     </div>
 </div>
-<section style="background: white; padding: 4rem 6rem; border-top: 1px solid var(--border);">
+<section class="organizers-section">
     <div class="s-eyebrow">Organizing Institutions</div>
-    <div style="display:flex; align-items:center; gap:3rem; flex-wrap:wrap;">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
-            <img src="img/organizers/SU_logo.png" alt="Sorbonne" style="height:60px;object-fit:contain;">
+    <div class="organizers-logos">
+        <div class="organizer-item">
+            <img src="img/organizers/SU_logo.png" alt="Sorbonne" >
         </div>
 
-        <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
-            <img src="img/organizers/CNRS_logo.png" alt="CNRS" style="height:60px;object-fit:contain;">
+        <div class="organizer-item">
+            <img src="img/organizers/CNRS_logo.png" alt="CNRS" >
         </div>
 
-        <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
-            <img src="img/organizers/LogoLIP6.png" alt="LIP6" style="height:60px;object-fit:contain;">
+        <div class="organizer-item">
+            <img src="img/organizers/LogoLIP6.png" alt="LIP6" >
         </div>
     </div>
 </section>

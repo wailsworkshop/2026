@@ -7,6 +7,7 @@ const nav = `
     <li><a href="index.html#about">About</a></li>
     <li><a href="cfp.html">Call for Papers</a></li>
     <li><a href="index.html#keynotes">Keynotes</a></li>
+    <li><a href="speakers.html">Speakers</a></li>
     <li><a href="committee.html">Committee</a></li>
     <li class="has-dropdown">
       <a href="#">Attend</a>
