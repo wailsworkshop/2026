@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3126.49 1370.63">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .75px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-5, .cls-6, .cls-9 {
+        stroke: #c65b8a;
+      }
+
+      .cls-1, .cls-10, .cls-11, .cls-12 {
+        fill: #c65b8a;
+      }
+
+      .cls-2, .cls-3, .cls-13, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4, .cls-8 {
+        stroke-width: 10px;
+      }
+
+      .cls-4, .cls-7, .cls-8 {
+        stroke: #fbdae8;
+      }
+
+      .cls-14 {
+        letter-spacing: .13em;
+      }
+
+      .cls-5 {
+        stroke-width: 4px;
+      }
+
+      .cls-15 {
+        letter-spacing: .08em;
+      }
+
+      .cls-6, .cls-9 {
+        stroke-width: 5px;
+      }
+
+      .cls-7 {
+        stroke-dasharray: 10;
+        stroke-width: 7px;
+      }
+
+      .cls-11 {
+        font-family: PlayfairDisplayRoman-Bold, 'Playfair Display';
+        font-size: 450px;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-8 {
+        stroke-dasharray: 9.81 9.81;
+      }
+
+      .cls-12 {
+        font-family: PlayfairDisplay-Italic, 'Playfair Display';
+        font-size: 300px;
+        font-style: italic;
+        font-variation-settings: 'wght' 400;
+        letter-spacing: .5em;
+      }
+
+      .cls-16 {
+        letter-spacing: .15em;
+      }
+
+      .cls-9 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <line class="cls-4" x1="685.31" y1="175.08" x2="685.31" y2="180.08"/>
+      <line class="cls-8" x1="685.31" y1="189.89" x2="685.31" y2="675.41"/>
+      <line class="cls-4" x1="685.31" y1="680.31" x2="685.31" y2="685.31"/>
+    </g>
+    <g>
+      <line class="cls-4" x1="1127.19" y1="940.43" x2="1122.86" y2="937.93"/>
+      <line class="cls-8" x1="1114.37" y1="933.03" x2="693.89" y2="690.27"/>
+      <line class="cls-4" x1="689.64" y1="687.81" x2="685.31" y2="685.31"/>
+    </g>
+    <g>
+      <line class="cls-4" x1="243.44" y1="940.43" x2="247.77" y2="937.93"/>
+      <line class="cls-8" x1="256.26" y1="933.03" x2="676.74" y2="690.27"/>
+      <line class="cls-4" x1="680.98" y1="687.81" x2="685.31" y2="685.31"/>
+    </g>
+    <circle class="cls-2" cx="685.31" cy="685.31" r="680.31"/>
+    <polygon class="cls-6" points="685.32 175.08 243.44 940.43 1127.19 940.43 685.32 175.08"/>
+    <circle class="cls-10" cx="685.31" cy="175.08" r="55.28"/>
+    <circle class="cls-10" cx="1127.19" cy="940.43" r="55.28"/>
+    <circle class="cls-10" cx="243.44" cy="940.43" r="55.28"/>
+    <circle class="cls-5" cx="685.31" cy="685.31" r="55.28"/>
+    <circle class="cls-10" cx="685.31" cy="685.31" r="21.26"/>
+    <path class="cls-3" d="M685.32,175.08c-147.29,255.12-294.59,510.24-441.88,765.35"/>
+    <path class="cls-2" d="M685.32,175.08c-23.03,13.71-436.45,269.81-441.88,765.35"/>
+    <path class="cls-2" d="M1127.19,940.43c-64.84,39.39-223.16,123.71-441.88,123.71s-377.04-84.31-441.88-123.71"/>
+    <path class="cls-2" d="M685.31,175.08c23.03,13.71,436.45,269.81,441.88,765.35"/>
+    <path class="cls-9" d="M353.66,1211.95c34.8,27.37,155.07,114.98,332.19,114.8,176.46-.17,296.24-87.38,331.12-114.8"/>
+    <path class="cls-9" d="M353.66,1211.95c68.55-27.38,184.56-63.87,332.19-63.78,147.07.09,262.67,36.44,331.12,63.78"/>
+    <line class="cls-2" x1="685.85" y1="1148.17" x2="685.85" y2="995.71"/>
+    <polygon class="cls-1" points="715.61 1013.59 685.85 998.71 685.85 1028.47 715.61 1013.59"/>
+    <path class="cls-7" d="M439.23,1248.72c51.45,20.18,137.48,46.63,246.61,46.59,108.86-.04,194.69-26.43,246.08-46.59"/>
+  </g>
+  <g>
+    <line class="cls-13" x1="1502.21" y1="625.75" x2="1503.49" y2="627.02"/>
+    <text class="cls-11" transform="translate(1454.75 718.37)"><tspan class="cls-15" x="0" y="0">W</tspan><tspan class="cls-14" x="471.14" y="0">A</tspan><tspan class="cls-16" x="829.8" y="0">ILS</tspan></text>
+    <text class="cls-12" transform="translate(1741.7 964.26)"><tspan x="0" y="0">2026</tspan></text>
+  </g>
+</svg>
