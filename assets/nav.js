@@ -66,6 +66,7 @@ document.body.insertAdjacentHTML("afterbegin", nav);
 const toggle = document.querySelector(".nav-toggle");
 const mobileMenu = document.querySelector(".nav-mobile");
 const mobileLinks = document.querySelectorAll(".nav-mobile a");
+const mobileNavBreakpoint = 1200;
 
 function closeMenu() {
   mobileMenu.classList.remove("is-open");
@@ -103,8 +104,27 @@ if (toggle && mobileMenu) {
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 900) {
+    if (window.innerWidth > mobileNavBreakpoint) {
       closeMenu();
     }
   });
 }
+
+(function loadAccessibilityAssets() {
+  const cssPath = "assets/accessibility.css";
+  const jsPath = "assets/accessibility.js";
+
+  if (!document.querySelector(`link[href="${cssPath}"]`)) {
+    const stylesheet = document.createElement("link");
+    stylesheet.rel = "stylesheet";
+    stylesheet.href = cssPath;
+    document.head.appendChild(stylesheet);
+  }
+
+  if (!document.querySelector(`script[src="${jsPath}"]`)) {
+    const script = document.createElement("script");
+    script.src = jsPath;
+    script.defer = true;
+    document.body.appendChild(script);
+  }
+})();

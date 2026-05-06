@@ -1,0 +1,406 @@
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+html {
+  font-size: var(--access-font-scale, 100%);
+}
+
+/* ── ACCESSIBILITY TOOLBAR ── */
+.accessibility-toolbar {
+  position: fixed;
+  top: calc(var(--nav-h) + 0.9rem);
+  z-index: 90;
+  font-family: "DM Sans", sans-serif;
+}
+
+.accessibility-toolbar[data-position="left"] {
+  left: 1rem;
+  right: auto;
+}
+
+.accessibility-toolbar[data-position="right"] {
+  left: auto;
+  right: 1rem;
+}
+
+.accessibility-toggle,
+.accessibility-actions button {
+  appearance: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(250, 248, 244, 0.97);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  min-height: 42px;
+  padding: 0.75rem 0.95rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+.accessibility-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  min-height: 46px;
+  padding: 0;
+  border-color: var(--accent);
+  border-radius: 999px;
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 8px 22px rgba(196, 92, 138, 0.28);
+}
+
+.accessibility-toggle:hover,
+.accessibility-toggle:focus-visible {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+.accessibility-toggle span[aria-hidden="true"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: transparent;
+  color: currentColor;
+  font-weight: 900;
+}
+
+.accessibility-panel {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  width: min(92vw, 330px);
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(250, 248, 244, 0.98);
+  color: var(--ink);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(12px);
+}
+
+.accessibility-toolbar[data-position="left"] .accessibility-panel {
+  left: 0;
+  right: auto;
+}
+
+.accessibility-toolbar[data-position="right"] .accessibility-panel {
+  left: auto;
+  right: 0;
+}
+
+.accessibility-panel-title {
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.accessibility-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.55rem;
+}
+
+.accessibility-actions + .accessibility-actions {
+  margin-top: 0.65rem;
+}
+
+.accessibility-font-size {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.accessibility-actions button {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.accessibility-toggle:hover,
+.accessibility-actions button:hover,
+.accessibility-toggle:focus-visible,
+.accessibility-actions button:focus-visible {
+  border-color: var(--accent);
+  outline: 3px solid rgba(196, 92, 138, 0.26);
+  outline-offset: 2px;
+}
+
+.accessibility-actions button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.accessibility-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+html.access-dyslexia body,
+html.access-dyslexia body *:not(svg):not(svg *) {
+  font-family: "OpenDyslexic", "Atkinson Hyperlegible", Arial, sans-serif !important;
+  letter-spacing: 0.01em;
+  word-spacing: 0.08em;
+}
+
+html.access-contrast {
+  --ink: #ffffff;
+  --paper: #000000;
+  --accent: #ffff00;
+  --accent-dark: #ffd800;
+  --accent2: #00ffff;
+  --muted: #f2f2f2;
+  --border: #ffffff;
+}
+
+html.access-contrast body,
+html.access-contrast nav,
+html.access-contrast .nav-mobile,
+html.access-contrast .accessibility-panel,
+html.access-contrast .accessibility-toggle,
+html.access-contrast .accessibility-actions button,
+html.access-contrast .about,
+html.access-contrast .cfp-body,
+html.access-contrast .cfp-card,
+html.access-contrast .kn-card,
+html.access-contrast .general-chair-card,
+html.access-contrast .chair-group,
+html.access-contrast .organizers-section,
+html.access-contrast .news-section,
+html.access-contrast .speaker-section:nth-child(odd),
+html.access-contrast .dropdown-inner,
+html.access-contrast .dropdown a,
+html.access-contrast .video-overlay-top,
+html.access-contrast .video-overlay-bottom {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+html.access-contrast .hero-right,
+html.access-contrast .countdown,
+html.access-contrast .committee,
+html.access-contrast .comm-group,
+html.access-contrast footer,
+html.access-contrast .cfp-hero {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+html.access-contrast p,
+html.access-contrast span,
+html.access-contrast li,
+html.access-contrast .s-lead,
+html.access-contrast .s-call,
+html.access-contrast .about-body,
+html.access-contrast .theme p,
+html.access-contrast .cfp-card p,
+html.access-contrast .kn-affil,
+html.access-contrast .speaker-bio,
+html.access-contrast .speaker-abstract,
+html.access-contrast .cd-label,
+html.access-contrast .cd-name,
+html.access-contrast footer,
+html.access-contrast footer a,
+html.access-contrast .comm-person-info span,
+html.access-contrast .comm-person-info-lg span,
+html.access-contrast .accessibility-panel-title {
+  color: #ffffff !important;
+}
+
+html.access-contrast a,
+html.access-contrast .nav-links a,
+html.access-contrast .nav-mobile a,
+html.access-contrast .dropdown a,
+html.access-contrast .deadline,
+html.access-contrast .s-eyebrow,
+html.access-contrast .eyebrow,
+html.access-contrast .acronym,
+html.access-contrast .cd-num,
+html.access-contrast .cfp-hero h1 em,
+html.access-contrast .hero-title em {
+  color: #ffff00 !important;
+}
+
+html.access-contrast .btn-fill,
+html.access-contrast .nav-cta,
+html.access-contrast .nav-mobile-cta,
+html.access-contrast .accessibility-actions button[aria-pressed="true"] {
+  background: #ffff00 !important;
+  color: #000000 !important;
+  border-color: #ffff00 !important;
+}
+
+html.access-contrast .btn-ghost,
+html.access-contrast .deadline,
+html.access-contrast .theme,
+html.access-contrast .cfp-card,
+html.access-contrast .kn-card,
+html.access-contrast .chair-group,
+html.access-contrast .general-chair-card,
+html.access-contrast .accessibility-panel,
+html.access-contrast .accessibility-toggle,
+html.access-contrast .accessibility-actions button,
+html.access-contrast nav,
+html.access-contrast .nav-mobile {
+  border-color: #ffffff !important;
+}
+
+html.access-contrast .theme,
+html.access-contrast .chair-group {
+  border-left-color: #ffff00 !important;
+}
+
+html.access-contrast .nav-toggle span,
+html.access-contrast .s-eyebrow::before,
+html.access-contrast .eyebrow::before,
+html.access-contrast .committee-label::before {
+  background: #ffff00 !important;
+}
+
+html.access-contrast .accessibility-toggle {
+  background: #ffff00 !important;
+  color: #000000 !important;
+  border-color: #ffff00 !important;
+  box-shadow: none;
+}
+
+html.access-contrast .accessibility-toggle:hover,
+html.access-contrast .accessibility-toggle:focus-visible {
+  background: #000000 !important;
+  color: #ffff00 !important;
+  border-color: #ffff00 !important;
+  outline: 3px solid #ffff00;
+  outline-offset: 2px;
+}
+
+html.access-contrast .accessibility-toggle span[aria-hidden="true"] {
+  background: transparent !important;
+  color: currentColor !important;
+}
+
+html.access-contrast .hero-slider img,
+html.access-contrast .speaker-photo,
+html.access-contrast .kn-img,
+html.access-contrast .cp img,
+html.access-contrast .general-chair-card img,
+html.access-contrast .general-chair-photo,
+html.access-contrast .organizer-logo,
+html.access-contrast .organizer-item img {
+  filter: contrast(1.22) saturate(0.7);
+}
+
+html.access-contrast .nav-links a.nav-cta,
+html.access-contrast .nav-mobile a.nav-mobile-cta,
+html.access-contrast a.btn-fill {
+  background: #ffff00 !important;
+  color: #000000 !important;
+  border: 2px solid #ffff00 !important;
+}
+
+html.access-contrast .nav-links a.nav-cta:hover,
+html.access-contrast .nav-mobile a.nav-mobile-cta:hover,
+html.access-contrast a.btn-fill:hover {
+  background: #000000 !important;
+  color: #ffff00 !important;
+  border-color: #ffff00 !important;
+  outline: 3px solid #ffff00;
+  outline-offset: 2px;
+}
+
+html.access-contrast ::selection {
+  background: #ffff00;
+  color: #000000;
+}
+
+
+/* When the hamburger menu is open, the floating accessibility button must not sit above it. */
+@media (max-width: 1200px) {
+  body.menu-open .accessibility-toolbar {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .accessibility-toolbar {
+    top: calc(var(--nav-h) + 0.55rem);
+  }
+
+  .accessibility-toolbar[data-position="left"] {
+    left: 0.75rem;
+    right: auto;
+  }
+
+  .accessibility-toolbar[data-position="right"] {
+    left: auto;
+    right: 0.75rem;
+  }
+
+  .accessibility-toggle span:last-child {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .accessibility-toggle {
+    width: 44px;
+    height: 44px;
+    min-height: 44px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .accessibility-panel {
+    position: fixed;
+    top: calc(var(--nav-h) + 0.65rem);
+    left: 1rem !important;
+    right: 1rem !important;
+    width: auto;
+  }
+}
