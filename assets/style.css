@@ -1170,11 +1170,16 @@ footer a:hover {
 
 /* ── ORGANIZERS SECTION ── */
 .organizers-section {
-  background: white;
-  padding: 4rem 6rem;
-  border-top: 1px solid var(--border);
+    background: white;
+    padding: 4rem 6rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
 }
 
+.supporters-logos,
 .organizers-logos {
   display: flex;
   align-items: center;
@@ -1182,6 +1187,8 @@ footer a:hover {
   flex-wrap: wrap;
 }
 
+
+.supporter-item,
 .organizer-item {
   display: flex;
   flex-direction: column;
@@ -1189,6 +1196,8 @@ footer a:hover {
   gap: 0.5rem;
 }
 
+.supporter-item img,
+.supporter-logo,
 .organizer-item img,
 .organizer-logo {
   height: 60px;
