@@ -1168,40 +1168,44 @@ footer a:hover {
   flex-shrink: 0;
 }
 
-/* ── ORGANIZERS SECTION ── */
+/* ── ORGANIZERS & SUPPORTERS ── */
 .organizers-section {
     background: white;
     padding: 4rem 6rem;
     border-top: 1px solid var(--border);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+}
+
+.organizers-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    align-items: start;
 }
 
-.supporters-logos,
-.organizers-logos {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  flex-wrap: wrap;
+.organizers-col-title {
+    margin-bottom: 1.5rem;
 }
 
-
-.supporter-item,
-.organizer-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
+.organizers-logos,
+.supporter-logos {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-.supporter-item img,
-.supporter-logo,
-.organizer-item img,
-.organizer-logo {
-  height: 60px;
-  object-fit: contain;
+.organizer-item,
+.supporter-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.organizer-logo,
+.supporter_logo {
+    height: 55px;
+    object-fit: contain;
 }
 
 /* ── NEWS SECTION ── */
