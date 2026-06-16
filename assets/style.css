@@ -966,6 +966,13 @@ footer a:hover {
   align-items: stretch;
 }
 
+.dates-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
 .date-card {
   border: 1px solid var(--border);
   padding: 1.5rem;
@@ -988,6 +995,87 @@ footer a:hover {
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--ink);
+}
+
+.programme-day {
+    margin-bottom: 4rem;
+}
+.programme-day-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--accent);
+}
+.programme-day-date {
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--ink);
+}
+.programme-day-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    font-weight: 500;
+}
+.programme-slot {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+}
+.programme-slot:last-child {
+    border-bottom: none;
+}
+.slot-time {
+    font-family: "Playfair Display", serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent);
+    padding-top: 0.1rem;
+    white-space: nowrap;
+}
+.slot-content {}
+.slot-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+}
+.slot-detail {
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.5;
+}
+.slot-tag {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    margin-bottom: 0.4rem;
+}
+.tag-keynote { background: rgba(196,92,138,0.1); color: var(--accent); }
+.tag-break   { background: rgba(224,219,210,0.5); color: var(--muted); }
+.tag-social  { background: rgba(232,164,74,0.15); color: #b07a1a; }
+.tag-paper   { background: rgba(15,15,15,0.07); color: var(--ink); }
+.tag-roundtable { background: rgba(196,92,138,0.18); color: var(--accent-dark); }
+.programme-note {
+    background: var(--paper);
+    border-left: 3px solid var(--accent2);
+    padding: 0.9rem 1.2rem;
+    border-radius: 2px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 1rem;
 }
 
 .back-link {
@@ -1912,4 +2000,5 @@ footer a:hover {
   body.menu-open {
     overflow: hidden;
   }
+
 }
