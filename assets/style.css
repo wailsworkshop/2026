@@ -1657,3 +1657,6 @@ footer a:hover { color: white; }
   .papers-table thead th, .papers-table td { padding: 0.8rem 0.8rem; }
   .papers-table td.col-title { width: auto; }
 }
+
+.funding-note { color: var(--muted); font-size: 0.82rem; line-height: 1.7; max-width: 720px; margin: 1.5rem 0 0; }
+.organizer-logo--wide { height: 90px; width: auto; border-radius: 4px; }
