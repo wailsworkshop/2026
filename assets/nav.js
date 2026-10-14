@@ -25,6 +25,7 @@ const nav = `
       <a href="#">Schedule</a>
       <div class="dropdown">
         <div class="dropdown-inner">
+          <a href="waiting-for-wails.html">Waiting for WAILS</a>
           <a href="schedule-programme.html">Programme</a>
           <a href="schedule-accepted-papers.html">Accepted Papers</a>
         </div>
