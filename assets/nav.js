@@ -51,6 +51,7 @@ const nav = `
       <div class="nav-mobile-label">Attend</div>
       <a href="attend-registration.html">Registration</a>
       <a href="attend-travel.html">Travel Information</a>
+      <a href="attend-venue.html">Venue &amp; Access</a>
       <a href="schedule-paris.html">What's On in Paris</a>
     </div>
 
