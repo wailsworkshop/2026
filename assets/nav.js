@@ -52,7 +52,7 @@ const nav = `
       <a href="attend-registration.html">Registration</a>
       <a href="attend-travel.html">Travel Information</a>
       <a href="attend-venue.html">Venue &amp; Access</a>
-      <a href="schedule-paris.html">What's On in Paris</a>
+      <a href="schedule-paris.html">What's on in Paris</a>
     </div>
 
     <div class="nav-mobile-group">
