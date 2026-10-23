@@ -16,6 +16,7 @@ const nav = `
         <div class="dropdown-inner">
           <a href="attend-registration.html">Registration</a>
           <a href="attend-travel.html">Travel Information</a>
+          <a href="attend-venue.html">Venue &amp; Access</a>
           <a href="schedule-paris.html">What's On in Paris</a>
         </div>
       </div>
@@ -57,6 +58,7 @@ const nav = `
 
     <div class="nav-mobile-group">
       <div class="nav-mobile-label">Schedule</div>
+      <a href="waiting-for-wails.html">Waiting for WAILS</a>
       <a href="schedule-programme.html">Programme</a>
       <a href="schedule-accepted-papers.html">Accepted Papers</a>
     </div>
