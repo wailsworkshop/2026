@@ -18,6 +18,7 @@ const nav = `
           <a href="attend-travel.html">Travel Information</a>
           <a href="attend-venue.html">Venue &amp; Access</a>
           <a href="schedule-paris.html">What's On in Paris</a>
+          <a href="https://www.manning.com/bundles/WAILS-2026" target="_blank" rel="noopener noreferrer">Manning Books &amp; Offers</a>
         </div>
       </div>
     </li>
@@ -29,6 +30,7 @@ const nav = `
           <a href="waiting-for-wails.html">Waiting for WAILS</a>
           <a href="schedule-programme.html">Programme</a>
           <a href="schedule-accepted-papers.html">Accepted Papers</a>
+          <a href="vote.html">Best Paper Vote</a>
         </div>
       </div>
     </li>
@@ -54,6 +56,7 @@ const nav = `
       <a href="attend-travel.html">Travel Information</a>
       <a href="attend-venue.html">Venue &amp; Access</a>
       <a href="schedule-paris.html">What's on in Paris</a>
+      <a href="https://www.manning.com/bundles/WAILS-2026" target="_blank" rel="noopener noreferrer">Manning Books &amp; Offers</a>
     </div>
 
     <div class="nav-mobile-group">
@@ -61,6 +64,7 @@ const nav = `
       <a href="waiting-for-wails.html">Waiting for WAILS</a>
       <a href="schedule-programme.html">Programme</a>
       <a href="schedule-accepted-papers.html">Accepted Papers</a>
+      <a href="vote.html">Best Paper Vote</a>
     </div>
 
     <a href="cfp.html" class="nav-mobile-cta">Submit</a>

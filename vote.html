@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Paper Vote – WAILS 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/meta.js"></script>
+</head>
+<body>
+
+<div class="cfp-page">
+    <div class="cfp-hero">
+        <div class="s-eyebrow">Schedule</div>
+        <h1>Best Paper <em>Vote</em></h1>
+        <p>Choose up to three full papers and up to three short papers. Voting is anonymous: your code is used only to check that each participant votes once and does not vote for their own paper.</p>
+    </div>
+    <div class="cfp-body">
+
+        <!-- Step 1: code -->
+        <form id="code-form" class="vote-card" novalidate>
+            <h2>Enter your voting code</h2>
+            <p>You will find your personal code in your welcome kit (in-person participants) or in the email sent to you (online participants).</p>
+            <label for="code-input" class="vote-label">Voting code</label>
+            <div class="vote-row">
+                <input id="code-input" name="code" type="text" inputmode="text" autocomplete="off" autocapitalize="characters"
+                       spellcheck="false" placeholder="ABCD-1234" maxlength="12" class="vote-input" required>
+                <button type="submit" class="vote-btn" id="code-btn">Continue</button>
+            </div>
+        </form>
+
+        <!-- Step 2: ballot -->
+        <form id="ballot-form" class="vote-ballot" hidden novalidate>
+            <p id="own-note" class="vote-note" hidden>Your own paper is not listed.</p>
+
+            <fieldset class="vote-group" data-cat="full">
+                <legend>Full papers <span class="vote-count" id="count-full" aria-live="polite">0 of 3 selected</span></legend>
+                <div class="vote-list" id="list-full"></div>
+            </fieldset>
+
+            <fieldset class="vote-group" data-cat="short">
+                <legend>Short papers <span class="vote-count" id="count-short" aria-live="polite">0 of 3 selected</span></legend>
+                <div class="vote-list" id="list-short"></div>
+            </fieldset>
+
+            <p class="vote-note">You can submit your vote only once. Check your choices before sending.</p>
+            <button type="submit" class="vote-btn" id="submit-btn">Submit my vote</button>
+        </form>
+
+        <!-- Step 3: done -->
+        <div id="done" class="vote-card" hidden tabindex="-1">
+            <h2>Thank you!</h2>
+            <p>Your vote has been recorded. The Best Paper Awards will be announced at the closing ceremony on Friday 11 December.</p>
+        </div>
+
+        <div id="status" class="vote-status" role="alert" aria-live="assertive" hidden></div>
+    </div>
+</div>
+
+<script src="assets/nav.js"></script>
+<script src="assets/footer.js"></script>
+<script>
+// Paste here the URL of the Google Apps Script web app (it ends with /exec)
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbw9MJbZy5sxm9h0mNBljE-EE9AndcDRJp_L6k1DWyqXUUixgV6kI7BuPDJ2XEPdaTc/exec';
+const MAX = 3;
+
+const PAPERS = [
+  {
+    "id": "P1.1",
+    "cat": "full",
+    "title": "Epistemic Vulnerability in AI Literacy: From a Secondary-School Pilot to a Teacher-Evaluated Handbook",
+    "authors": "Aldo Pisano, Ines Crispini, Tiziana Catarci, Maria Cristina Carrisi, Emiliana Murgia"
+  },
+  {
+    "id": "P1.2",
+    "cat": "full",
+    "title": "A systematic review of reviews on K-12 AI literacy education",
+    "authors": "Camille Miele, Néhémie Henry"
+  },
+  {
+    "id": "P1.3",
+    "cat": "short",
+    "title": "Teaching AI Literacy through an Interdisciplinary Approach to Promote Transfer",
+    "authors": "Camille Miele, Louis Bourgaux"
+  },
+  {
+    "id": "P1.4",
+    "cat": "short",
+    "title": "From AI Use to AI Judgment: A Framework for Responsible AI Literacy in Education",
+    "authors": "Rishabh Banga"
+  },
+  {
+    "id": "P1.5",
+    "cat": "short",
+    "title": "Scaffolding K-12 Students' Search Strategies in the era of generative AI - Getting the Medicine and Managing the Poison",
+    "authors": "Emiliana Murgia, Maria Soledad Pera, Monica Landoni, Elisabetta Nicchia, Theo Huibers"
+  },
+  {
+    "id": "P2.1",
+    "cat": "full",
+    "title": "Pedagogy-Centered AI Teacher Training in Austria - From KIK4CLIL to a National Multiplier Model",
+    "authors": "William Sprague, Alexandra Posekany"
+  },
+  {
+    "id": "P2.2",
+    "cat": "short",
+    "title": "Preparing STEM Faculty for Cognitive Orchestration with Generative AI: A 12-Hour Course Design and Evaluation Plan",
+    "authors": "Francisco Martin Gomez, Daniela Rotelli, Veronica Punzo"
+  },
+  {
+    "id": "P2.3",
+    "cat": "full",
+    "title": "Reimagining Engineering Lecture Slides as Interactive Accessible Storytelling Applications Using Generative AI",
+    "authors": "Marina Buzzi, Nicola Forgione, Barbara Leporini, Angelica Lo Duca"
+  },
+  {
+    "id": "P2.4",
+    "cat": "short",
+    "title": "The Evolution of LeDA: Advancing Human-Centred AI Assistance for Learning Design",
+    "authors": "Petra Vondra, Barbi Svetec, Josipa Bađari, Darko Grabar, Blaženka Divjak"
+  },
+  {
+    "id": "P2.5",
+    "cat": "short",
+    "title": "Reliable Learning-Material Generation with Large Language Models",
+    "authors": "Ludovico Boratto, Marco Cabras, Salvatore Mario Carta, Marco Manolo Manca, Mirko Marras"
+  },
+  {
+    "id": "P3.1",
+    "cat": "full",
+    "title": "Changes in Help-Seeking Strategies Predict unaided Performance during AI-based Mathematical Learning",
+    "authors": "Rania Abdelghani, Peter Kaiser, Kou Murayama"
+  },
+  {
+    "id": "P3.2",
+    "cat": "full",
+    "title": "Chatbots in Education: A Discussion of Stakeholders, Requirements, and Solutions",
+    "authors": "Lea Cohausz, Thilo Dieing, Tillmann Woller, Julia Baumann, Stefan Janke"
+  },
+  {
+    "id": "P3.3",
+    "cat": "full",
+    "title": "Toward Human–AI Co-Learning: A Human-Centered Multi-Agent Architecture",
+    "authors": "Giovanni Adorni, Daniele Grosso"
+  },
+  {
+    "id": "P3.4",
+    "cat": "short",
+    "title": "Epistemic Ownership in AI-Mediated Education: Governing Delegation, Learning, and Assessment",
+    "authors": "Jorge Alberto Fábrega Lacoa"
+  },
+  {
+    "id": "P3.5",
+    "cat": "short",
+    "title": "Pedagogical Presence: What Remains of Human Tutoring in the Generative AI Era",
+    "authors": "Massimiliano Naldini"
+  },
+  {
+    "id": "P4.1",
+    "cat": "full",
+    "title": "The reception of Minecraft Education Edition in user reviews: an LLM-assisted thematic analysis",
+    "authors": "Nadia Di Leo"
+  },
+  {
+    "id": "P4.2",
+    "cat": "full",
+    "title": "Detecting and Remediating Object-Interaction Errors in VR: Transposing Reason’s Taxonomy for Adaptive Learner Tutoring",
+    "authors": "Idrissa Seck, Michel Galaup, Frederick Benaben"
+  },
+  {
+    "id": "P4.3",
+    "cat": "full",
+    "title": "Digital Musical Mediation and Emerging AI applications for learners with ASD: educational perspectives from a scoping review",
+    "authors": "Emanuela Zappalà, Alessio Di Paolo, Paola Aiello, Maurizio Sibilio"
+  },
+  {
+    "id": "P4.4",
+    "cat": "short",
+    "title": "Scaffolding or Substituting? Generative AI in Serious Games for Adolescent Emotion Regulation",
+    "authors": "Martina Casillo, Flavia De Simone"
+  },
+  {
+    "id": "P4.5",
+    "cat": "short",
+    "title": "VoiceKids as a Human-Centered Pilot for AI-Supported AAC Storytelling in Inclusive Education",
+    "authors": "Silvio Pagliara, Daniele Bullegas, Gianmarco Bonavolonta, Branislav Gerazov, Katerina Mavrou, Danche Dorovska, Francesco Zanfardino, Anna Schmidt, May Agius, Nefi Charalambous-Darden, Antonio Spera, Kasia Łuszczak, Ilaria Tatulli, Antonello Mura"
+  },
+  {
+    "id": "P5.1",
+    "cat": "full",
+    "title": "A Multi-Perspective Evaluation Framework for LLM-Based Educational Prerequisite Relation Inference",
+    "authors": "Rania Ait Chabane, Cléa Racine, Armelle Brun"
+  },
+  {
+    "id": "P5.2",
+    "cat": "full",
+    "title": "Finding Your Mastery Frontier: Prerequisite Graphs for Shorter Cold-Start Placement on Generated Course Ontologies",
+    "authors": "Cheng Arn David Goh"
+  },
+  {
+    "id": "P5.3",
+    "cat": "full",
+    "title": "BLOOM: A Blended Learning Ontology for Course Analytics and Student Support",
+    "authors": "Daniela Rotelli, Marco Tocco, Francesca Maridina Malloci, Yves Noël"
+  },
+  {
+    "id": "P5.4",
+    "cat": "short",
+    "title": "IMIHub: Designing An AI Educational Hub for Learning the History of Italian Military Internees",
+    "authors": "Angelica Lo Duca, Manuela Moretti"
+  },
+  {
+    "id": "P6.1",
+    "cat": "full",
+    "title": "Integrating Bayesian Latent Structure into Gower Distance for Ordinal Data with Informative Missingness",
+    "authors": "Zeyneb M'Hamedi, Maxime Perodaud, Christel Dartigues-Pallez, Isabelle Mirbel"
+  },
+  {
+    "id": "P6.2",
+    "cat": "short",
+    "title": "A Supervised Vector-Based Framework for Multi-Group Fairness: Evaluating Italian School Funding against External Reference Distributions",
+    "authors": "Massimiliano Mancini, Donatella Merlini, Maria Cecilia Verri"
+  },
+  {
+    "id": "P6.3",
+    "cat": "short",
+    "title": "Beyond Demographics: Fairness Challenges in Educational AI",
+    "authors": "Emiliano Pavicich, Hoel Le Capitaine"
+  },
+  {
+    "id": "P6.4",
+    "cat": "short",
+    "title": "Assembling Validity Evidence for Rubric-Based LLM Assessment: A Criterion-Level Protocol",
+    "authors": "Daniele Agostini"
+  },
+  {
+    "id": "P6.5",
+    "cat": "short",
+    "title": "On the use of generative AI in education: changes, challenges, and risks",
+    "authors": "Hoel Le Capitaine"
+  }
+];
+
+const MESSAGES = {
+    closed: 'Voting is not open at the moment.',
+    unknown_code: 'This code is not valid. Please check it and try again.',
+    already_used: 'This code has already been used to vote.',
+    own_paper: 'You cannot vote for your own paper.',
+    too_many: 'You can choose at most three papers per category.',
+    empty: 'Please choose at least one paper.',
+    duplicate: 'The same paper was selected twice.',
+    invalid_paper: 'One of the selected papers is not valid.',
+    busy: 'The server is busy. Please try again in a few seconds.',
+    network: 'Connection problem. Please check your connection and try again.'
+};
+
+const $ = id => document.getElementById(id);
+let currentCode = '';
+
+function normCode(raw) {
+    const c = String(raw || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+    return c.length === 8 ? c.slice(0, 4) + '-' + c.slice(4) : '';
+}
+
+function showStatus(msg) {
+    const s = $('status');
+    if (!msg) { s.hidden = true; s.textContent = ''; return; }
+    s.textContent = msg; s.hidden = false;
+}
+
+function buildList(cat, excluded) {
+    const list = $('list-' + cat);
+    list.innerHTML = '';
+    PAPERS.filter(p => p.cat === cat && excluded.indexOf(p.id) === -1).forEach(p => {
+        const id = 'paper-' + p.id.replace(/\W/g, '-');
+        const label = document.createElement('label');
+        label.className = 'vote-item';
+        label.setAttribute('for', id);
+        const box = document.createElement('input');
+        box.type = 'checkbox'; box.id = id; box.value = p.id; box.name = cat;
+        const text = document.createElement('span');
+        text.className = 'vote-text';
+        const t = document.createElement('span'); t.className = 'paper-title'; t.textContent = p.title;
+        const a = document.createElement('span'); a.className = 'paper-authors'; a.textContent = p.authors;
+        text.append(t, a);
+        label.append(box, text);
+        list.append(label);
+    });
+    list.addEventListener('change', () => updateLimits(cat));
+    updateLimits(cat);
+}
+
+function selected(cat) {
+    return Array.from(document.querySelectorAll('#list-' + cat + ' input:checked')).map(b => b.value);
+}
+
+function updateLimits(cat) {
+    const n = selected(cat).length;
+    $('count-' + cat).textContent = n + ' of ' + MAX + ' selected';
+    document.querySelectorAll('#list-' + cat + ' input').forEach(b => {
+        b.disabled = !b.checked && n >= MAX;
+        b.closest('.vote-item').classList.toggle('is-disabled', b.disabled);
+    });
+}
+
+$('code-form').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    showStatus('');
+    const code = normCode($('code-input').value);
+    if (!code) { showStatus('A voting code has 8 characters, for example ABCD-1234.'); return; }
+    const btn = $('code-btn'); btn.disabled = true; btn.textContent = 'Checking…';
+    try {
+        const r = await fetch(ENDPOINT + '?code=' + encodeURIComponent(code));
+        const data = await r.json();
+        if (!data.ok) { showStatus(MESSAGES[data.error] || 'Something went wrong.'); return; }
+        currentCode = code;
+        buildList('full', data.excluded || []);
+        buildList('short', data.excluded || []);
+        $('own-note').hidden = !(data.excluded && data.excluded.length);
+        $('code-form').hidden = true;
+        $('ballot-form').hidden = false;
+        $('ballot-form').querySelector('legend').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } catch (e) {
+        showStatus(MESSAGES.network);
+    } finally {
+        btn.disabled = false; btn.textContent = 'Continue';
+    }
+});
+
+$('ballot-form').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    showStatus('');
+    const full = selected('full'), short = selected('short');
+    if (full.length + short.length === 0) { showStatus(MESSAGES.empty); return; }
+    const summary = 'You are voting for ' + full.length + ' full paper(s) and ' + short.length +
+        ' short paper(s). You will not be able to change your vote. Submit?';
+    if (!window.confirm(summary)) return;
+    const btn = $('submit-btn'); btn.disabled = true; btn.textContent = 'Sending…';
+    try {
+        const r = await fetch(ENDPOINT, { method: 'POST', body: JSON.stringify({ code: currentCode, full, short }) });
+        const data = await r.json();
+        if (!data.ok) { showStatus(MESSAGES[data.error] || 'Something went wrong.'); return; }
+        $('ballot-form').hidden = true;
+        const done = $('done'); done.hidden = false; done.focus();
+    } catch (e) {
+        showStatus(MESSAGES.network);
+    } finally {
+        btn.disabled = false; btn.textContent = 'Submit my vote';
+    }
+});
+
+// A link like vote.html?code=ABCD-1234 fills in the code automatically
+const pre = new URLSearchParams(location.search).get('code');
+if (pre) $('code-input').value = pre;
+</script>
+</body>
+</html>

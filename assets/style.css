@@ -850,3 +850,25 @@ footer a:hover { color: white; }
     .session-papers li { grid-template-columns: 1fr; }
     .paper-type { grid-row: auto; margin-bottom: 0.2rem; }
 }
+
+/* ── Best paper vote ── */
+.vote-card { background: var(--paper); border: 1px solid var(--border); border-radius: 4px; padding: 2rem; max-width: 640px; }
+.vote-card h2 { margin-top: 0; }
+.vote-label { display: block; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 1.2rem 0 0.4rem; }
+.vote-row { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+.vote-input { flex: 1 1 220px; font: inherit; font-size: 1.15rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 3px; background: white; color: var(--ink); }
+.vote-input:focus, .vote-item input:focus-visible, .vote-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.vote-btn { font: inherit; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; background: var(--accent); color: white; border: none; border-radius: 3px; padding: 0.8rem 1.6rem; cursor: pointer; min-height: 44px; }
+.vote-btn:hover { background: var(--accent-dark); }
+.vote-btn:disabled { opacity: 0.6; cursor: wait; }
+.vote-group { border: none; padding: 0; margin: 0 0 2.5rem; }
+.vote-group legend { font-family: "Playfair Display", serif; font-size: 1.6rem; font-weight: 700; color: var(--ink); margin-bottom: 1rem; display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.vote-count { font-family: "DM Sans", sans-serif; font-size: 0.8rem; font-weight: 500; color: var(--accent); letter-spacing: 0.04em; }
+.vote-list { display: flex; flex-direction: column; gap: 0.6rem; }
+.vote-item { display: flex; gap: 0.9rem; align-items: flex-start; padding: 0.9rem 1rem; border: 1px solid var(--border); border-radius: 4px; background: white; cursor: pointer; }
+.vote-item:has(input:checked) { border-color: var(--accent); background: rgba(196,92,138,0.06); }
+.vote-item.is-disabled { opacity: 0.5; cursor: not-allowed; }
+.vote-item input { width: 1.25rem; height: 1.25rem; margin-top: 0.15rem; accent-color: var(--accent); flex-shrink: 0; }
+.vote-text { display: flex; flex-direction: column; gap: 0.15rem; }
+.vote-note { color: var(--muted); font-size: 0.88rem; }
+.vote-status { margin-top: 1.5rem; padding: 0.9rem 1.2rem; border: 1px solid var(--accent); border-radius: 3px; background: rgba(196,92,138,0.08); color: var(--accent-dark); font-size: 0.92rem; max-width: 640px; }
