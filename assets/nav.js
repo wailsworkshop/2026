@@ -56,8 +56,8 @@ const nav = `
       <a href="attend-registration.html">Registration</a>
       <a href="attend-travel.html">Travel Information</a>
       <a href="attend-venue.html">Venue &amp; Access</a>
+      <a href="attend-accessibility.html">Accessibility &amp; Inclusion</a>
       <a href="schedule-paris.html">What's on in Paris</a>
-      <a href="https://www.manning.com/bundles/WAILS-2026" target="_blank" rel="noopener noreferrer">Manning Books &amp; Offers</a>
     </div>
 
     <div class="nav-mobile-group">
