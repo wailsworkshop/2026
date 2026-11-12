@@ -872,3 +872,32 @@ footer a:hover { color: white; }
 .vote-text { display: flex; flex-direction: column; gap: 0.15rem; }
 .vote-note { color: var(--muted); font-size: 0.88rem; }
 .vote-status { margin-top: 1.5rem; padding: 0.9rem 1.2rem; border: 1px solid var(--accent); border-radius: 3px; background: rgba(196,92,138,0.08); color: var(--accent-dark); font-size: 0.92rem; max-width: 640px; }
+
+
+
+/* ── Jazz evening: drinks list ── */
+.drinks-ticket { display: inline-flex; align-items: center; gap: 0.8rem; margin-top: 1.8rem; padding: 0.9rem 1.3rem; border: 1px solid var(--accent); border-radius: 999px; color: white; font-size: 0.95rem; font-weight: 500; }
+.drinks-ticket svg { color: var(--accent); flex-shrink: 0; }
+.drinks-body { background: var(--paper); padding: 4rem 6rem 5rem; }
+.drinks-menu { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.8rem; }
+.drinks-card { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 2rem 2.2rem; box-shadow: 0 6px 24px rgba(15,15,15,0.04); }
+.drinks-wide { grid-column: 1 / -1; }
+.drinks-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding-bottom: 0.9rem; margin-bottom: 0.4rem; border-bottom: 2px solid var(--ink); }
+.drinks-head h2 { font-family: "Playfair Display", serif; font-size: 1.6rem; font-weight: 700; margin: 0; color: var(--ink); }
+.drinks-fr { font-family: "Playfair Display", serif; font-style: italic; font-size: 0.95rem; color: var(--accent); }
+.drinks-sub { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin: 1.2rem 0 0.2rem; }
+.drinks-wines { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 2rem; }
+.drinks-list { list-style: none; margin: 0; padding: 0; }
+.drinks-list li { display: flex; flex-direction: column; gap: 0.15rem; padding: 0.8rem 0; border-bottom: 1px dotted var(--border); }
+.drinks-list li:last-child { border-bottom: none; }
+.drink-name { font-size: 1rem; font-weight: 500; color: var(--ink); line-height: 1.35; }
+.drink-detail { font-size: 0.85rem; color: var(--muted); line-height: 1.45; }
+.drink-badge { display: inline-block; vertical-align: middle; margin-left: 0.35rem; padding: 0.05rem 0.45rem; border: 1px solid var(--accent); border-radius: 999px; font-size: 0.62rem; font-weight: 500; letter-spacing: 0.06em; color: var(--accent); }
+.drinks-footnote { max-width: 1000px; margin: 2.5rem auto 0; text-align: center; font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+@media (max-width: 900px) {
+    .drinks-body { padding: 2.5rem 1.2rem 3.5rem; }
+    .drinks-menu { grid-template-columns: 1fr; gap: 1.2rem; }
+    .drinks-wines { grid-template-columns: 1fr; }
+    .drinks-card { padding: 1.5rem 1.4rem; }
+    .drinks-ticket { border-radius: 12px; font-size: 0.9rem; }
+}
